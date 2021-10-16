@@ -192,6 +192,13 @@
   margin-top: 10px;
 }
 
+.danisman-box {
+  background-color: #eeeeee;
+}
+
+.danisman-profile {
+  width: calc(100% - 100px);
+}
 /*  sidebar  */
 .cursor-pointer {
   cursor: pointer;
@@ -202,4 +209,96 @@
 a:hover {
   color: black !important;
   text-decoration: none !important;
+}
+
+/* cards */
+.cards {
+  width: 230px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+.cards:hover {
+  box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+.card-banner {
+  position: absolute;
+}
+.discount {
+  background-color: black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: white;
+}
+.card-image {
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+.card-product-text {
+  width: calc(100% - 25px);
+}
+.like {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 155px;
+}
+@media screen and (max-width: 530px) {
+  .cards {
+    width: 135px;
+  }
+  .like {
+    margin-left: 67px;
+  }
+  .card-image {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 852px) and (min-width: 768px) {
+  .cards {
+    width: 185px;
+  }
+  .like {
+    margin-left: 100px;
+  }
+  .card-image {
+    height: 200px;
+  }
+}
+.like:hover {
+  color: red;
+}
+.card-institution {
+  font-size: 11px;
+  margin-top: -40px;
+}
+.star {
+  color: orange;
+}
+.card-text {
+  font-size: 10px;
+}
+.active {
+  color: black !important;
+}
+.pagination-numbers {
+  color: #6c757d;
+}
+/* cards end */
+
+.clear-filter {
+  font-size: small;
+}
+
+.bar-dropdown {
+  background-color: #eeeeee;
 }
