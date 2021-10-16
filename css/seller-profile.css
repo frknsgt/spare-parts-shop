@@ -187,3 +187,7 @@
   margin-top: -25px;
   position: absolute;
 }
+
+.add-file-btn {
+  height: 30px;
+}

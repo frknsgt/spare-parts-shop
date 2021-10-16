@@ -264,3 +264,7 @@
 a:hover {
   text-decoration: none !important;
 }
+
+.add-file-btn {
+  height: 30px;
+}

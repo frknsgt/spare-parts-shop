@@ -194,7 +194,7 @@
                   <span class="text-muted">0545 555 55 55</span>
                 </div>
                 <div class="text-center font-weight-bolder cursor-pointer">
-                  Mesaj Gönder
+                  <a href="#messageModal" data-toggle="modal">Mesaj Gönder</a>
                 </div>
               </div>
             </div>
@@ -428,6 +428,59 @@
       </div>
     </div>
     <!-- basket modal end  -->
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="messageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body p-3 pt-2">
+            <div class="w-100 text-right">
+              <a
+                type="button"
+                class="cursor-pointer text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </a>
+            </div>
+            <h6 class="font-weight-bolder">Konu</h6>
+            <input type="text" placeholder="Konu" class="w-100 p-3" />
+            <h6 class="font-weight-bolder">Açıklama</h6>
+            <textarea
+              name=""
+              placeholder="Açıklama"
+              id=""
+              cols="30"
+              rows="10"
+              class="w-100"
+            ></textarea>
+            <div class="row m-0">
+              <div class="col-12 col-md-3 p-2 pb-md-0">
+                <h6 class="font-weight-bolder w-100 m-0">Dosya Ekle</h6>
+              </div>
+              <div class="col-6 col-md-6 p-2">
+                <input type="text" class="w-100" placeholder="Seç" />
+              </div>
+              <div class="col-6 col-md-3 p-2">
+                <button class="btn btn-warning px-4 add-file-btn rounded-lg">
+                  Yükle
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-warning mt-3 rounded-lg float-right">
+              Gönder
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal End-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
