@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ürün Detayı</title>
+    <link href="css/product-detail.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,shrink-to-fit=no"
+    />
+  </head>
+
+  <body class="p-0">
+    <!-- banner -->
+    <div class="row m-0 banner justify-content-between px-3 pl-5 pl-lg-3">
+      <a href="index.html" class="banner-logo px-3 pb-3 ">
+        <img src="images/logo.png" class="mh-100 mw-100" />
+      </a>
+      <marquee class="mh-100 d-none d-sm-block ml-3 marquee-logos">
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-5
+          "
+        >
+          <img src="images/audi.png" class="mt-2 banner-logo-img" />
+        </span>
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-3
+          "
+        >
+          <img src="images/bmw.png" class="mt-2 banner-logo-img" />
+        </span>
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-3
+          "
+        >
+          <img src="images/mercedes.png" class="mt-2 banner-logo-img" />
+        </span>
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-3
+          "
+        >
+          <img src="images/rover.png" class="mt-2 banner-logo-img" />
+        </span>
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-3
+          "
+        >
+          <img src="images/hyundai.png" class="mt-2 banner-logo-img" />
+        </span>
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-3
+          "
+        >
+          <img src="images/kia.png" class="mt-2 banner-logo-img" />
+        </span>
+        <span
+          class="
+            mt-3
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+            ml-3
+          "
+        >
+          <img src="images/peugeot.png" class="mt-2 banner-logo-img" />
+        </span>
+      </marquee>
+      <div class="d-inline-block">
+        <a
+          class="ml-0 ml-sm-5"
+          href="#searchInput"
+          data-toggle="collapse"
+          data-target="#searchInput"
+          ><i class="fas fa-search icons"></i
+        ></a>
+        <i class="far fa-user-circle icons ml-4"></i>
+        <a
+          class="ml-4 icons-link"
+          href="#basketModal"
+          data-toggle="modal"
+          data-target="#basketModal"
+          data-backdrop="false"
+        >
+          <i class="fas fa-shopping-bag icons mt-0"></i>
+          <span class="badge badge-light basket-count">1</span>
+        </a>
+      </div>
+    </div>
+    <!--  banner end  -->
+    <!--************************************************** content start *********************************************************-->
+    <!--  sidebar and content  -->
+    <div class="row m-0 px-md-4 mt-md-3">
+      <div
+        class="w-100 collapse mb-md-3 mt-md-0 font-weight-bolder"
+        id="searchInput"
+      >
+        <a
+          class="search-close"
+          href="#searchInput"
+          data-toggle="collapse"
+          data-target="#searchInput"
+          >X</a
+        >
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Site içi ürün arama"
+          onkeydown="search(this)"
+        />
+      </div>
+      <div class="row m-0 px-3">
+        <h6 class="font-weight-bolder pb-3 border-bottom w-100">
+          Yedek Parça , Aksesuar > Otomotiv Ekipmanları > Jant & Lastik > Jant &
+          Lastik Takımları
+        </h6>
+        <div class="col-12 col-lg-6 p-0 text-center">
+          <img src="images/content1.png" width="100%" class="galery" />
+          <div class="row m-0 text-center">
+            <div class="col px-2 mx-auto mb-2">
+              <img src="images/detail1.png" class="border galery-img" />
+            </div>
+            <div class="col px-2 mx-auto mb-2">
+              <img src="images/detail2.png" class="border galery-img" />
+            </div>
+            <div class="col px-2 mx-auto mb-2">
+              <img src="images/detail1.png" class="border galery-img" />
+            </div>
+            <div class="col px-2 mx-auto mb-2">
+              <img src="images/detail2.png" class="border galery-img" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h4 class="font-weight-bolder">
+            315/75R16 MAXTREK - MUD TRAC VE PARA DELİK -44 JANT
+          </h4>
+          <div class="row galery-text">
+            <div class="col-12 col-sm-6">
+              <h3 class="px-3">165.00 TL</h3>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">İlan No</div>
+                <div class="col-6">946762783</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">İlan Tarihi</div>
+                <div class="col-6">17 Ağustos 2021</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Tipi</div>
+                <div class="col-6">Jant & Lastik Takımları</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Türü</div>
+                <div class="col-6">4x4, Pickup & SUV</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Ebat / Boyut</div>
+                <div class="col-6">315 / 75 / 16</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Jant Markası</div>
+                <div class="col-6">MTT</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Lastik Markası</div>
+                <div class="col-6">Maxtrek</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Bijon Aralığı</div>
+                <div class="col-6">6x139,7</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Kimden</div>
+                <div class="col-6">Mağazadan</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Çıkma Parça</div>
+                <div class="col-6">Hayır</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Takas</div>
+                <div class="col-6">Evet</div>
+              </div>
+              <div class="row m-0 border-bottom pb-2">
+                <div class="col-6 font-weight-bolder">Durumu</div>
+                <div class="col-6">Sıfır</div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 px-3">
+              <div class="institution-box">
+                <div class="w-100 institution-box-header p-3">
+                  <img
+                    src="images/detail-logo.png"
+                    class="institution-logo float-left"
+                  />
+                  <div class="institution-title font-weight-bolder">
+                    CEYLAN OTO LASTİK <br />Ankara
+                  </div>
+                </div>
+                <div class="px-3">
+                  <span class="font-weight-bolder mt-3">Mustafa Ceylan</span
+                  ><br />
+                  <span
+                    class="institution-text px-2 border-right border-warning"
+                    >Tüm İlanları</span
+                  >
+                  <span
+                    class="institution-text px-2 border-right border-warning"
+                    ><a href="seller-profile.html">Profili</a></span
+                  >
+                  <span class="institution-text px-2"
+                    >Favori Satıcılarıma Ekle</span
+                  >
+                  <div class="border border-secondary p-3 my-2">
+                    <span class="font-weight-bolder pt-1">İş</span
+                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="text-muted">0312 222 22 22</span>
+                    <hr class="border-secondary" />
+                    <span class="font-weight-bolder pt-1">Cep</span>&nbsp;&nbsp;
+                    <span class="text-muted">0545 555 55 55</span>
+                  </div>
+                  <div class="text-center font-weight-bolder cursor-pointer">
+                    Mesaj Gönder
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="add-basket-text border mt-4 d-inline-block">
+            <span class="p-3 d-inline-block border-right cursor-pointer"
+              >-</span
+            >
+            <span class="p-3 d-inline-block px-5">1</span>
+            <span class="p-3 d-inline-block border-left cursor-pointer">+</span>
+          </div>
+          <button
+            class="btn btn-warning add-basket-text text-light py-3 basket-btn"
+          >
+            Sepete Ekle
+          </button>
+        </div>
+      </div>
+      <div class="row m-0 mt-5 w-100">
+        <ul class="nav nav-pills w-100">
+          <li class="nav-item w-50">
+            <a class="nav-link active" href="#detail" data-toggle="tab">
+              AÇIKLAMA
+            </a>
+          </li>
+          <li class="nav-item w-50">
+            <a class="nav-link" href="#comments" data-toggle="tab">
+              YORUMLAR
+            </a>
+          </li>
+        </ul>
+        <div class="w-100">
+          <div class="tab-pane tab-page p-3 active" id="detail">
+            <p>315/75R16 MAXTREK - MUD TRAC</p>
+            <p>LASTİKLERİMİZ M/T MODELİDİR. JANTLARIMIZ ;</p>
+            <p>6X139.7 -44 ET 10 INC PARA DELİK JANT TAKIMIDIR.</p>
+            <p>
+              KASLI GÖRÜNTÜSÜ VE AÇIK DİŞ ARA MESAFESİ İLE KAR VE ÇAMURDA
+              İNANILMAZ PERFORMANS SERGİLER.
+            </p>
+            <p>
+              KALIN DİŞ YAPISI ARACINIZIN ALTINDA İNANILMAZ ESTETİK VE KASLI BİR
+              GÖRÜNTÜ SAĞLAYACAKTIR.
+            </p>
+            <p>ANKARA İÇİ SÖKME TAKMA BALASN ÜCRETSİZDİR.</p>
+            <p>TÜRKİYENİN HERYERİNE KARGO İLE GÖNDERİM VARDIR.</p>
+            <p>JANT LASTİK SET TAKIM FİYATIDIR.</p>
+            <p>ADET FİYATTI 12.000 TL</p>
+          </div>
+          <div class="tab-pane tab-page p-3" id="comments">
+            <p class="font-weight-bolder mb-1">4.8 Puan</p>
+            <p>3 Yorum</p>
+            <div class="row m-0 mt-4">
+              <img
+                src="images/comment1.png"
+                class="comment-img float-left"
+              />
+              <div class="comment-text border border-dark p-3">
+                <p>
+                  <i class="fas fa-star"></i><i class="fas fa-star ml-1"></i
+                  ><i class="fas fa-star ml-1"></i
+                  ><i class="fas fa-star ml-1"></i
+                  ><i class="fas fa-star ml-1"></i>
+                </p>
+                <p class="font-weight">
+                  <span class="comment-user">Tolga Sarıtaş</span
+                  ><span class="text-muted">-7 Temmuz</span>
+                </p>
+                <p class="text-muted">
+                  Arabam için yıllardır kullandığım en güvenilir ve kaliteli
+                  araç parçalar için çok teşekkürler.
+                </p>
+              </div>
+            </div>
+            <div class="row m-0 mt-4">
+              <img
+                src="images/comment2.png"
+                class="comment-img float-left"
+              />
+              <div class="comment-text border border-dark p-3">
+                <p>
+                  <i class="fas fa-star"></i><i class="fas fa-star ml-1"></i
+                  ><i class="fas fa-star ml-1"></i
+                  ><i class="fas fa-star ml-1"></i
+                  ><i class="fas fa-star ml-1"></i>
+                </p>
+                <p class="font-weight">
+                  <span class="comment-user">Özgür Çevik</span
+                  ><span class="text-muted">-7 Temmuz</span>
+                </p>
+                <p class="text-muted">
+                  Arabam için yıllardır kullandığım en güvenilir ve kaliteli
+                  araç parçalar için çok teşekkürler.
+                </p>
+              </div>
+            </div>
+            <h2>Yorum Ekle</h2>
+            <p>
+              <h3 class="d-inline-block m-0">Puan ver</h3>
+              <i class="fas fa-star ml-3 point-star"></i><i class="fas fa-star ml-1 point-star"></i
+              ><i class="fas fa-star ml-1 point-star"></i><i class="fas fa-star ml-1 point-star"></i
+              ><i class="fas fa-star ml-1 point-star"></i>
+            </p>
+            <div class="row m-0 justify-content-between">
+                <input type="text" class="comment-input px-3 py-2 border" placeholder="Ad Soyad"><input type="text" class="comment-input px-3 py-2 border" placeholder="E-mail">
+                <textarea class="w-100 comment-input px-3 py-2 border mt-3" placeholder="Yorumunuz" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  sidebar and content end  -->
+
+    <!--  advertising space  -->
+    <div class="container text-center mt-5 px-5">
+      <img
+        src="images/reklamFooter.png"
+        width="100%"
+        height="200px"
+        alt="asdasdasdas"
+      />
+    </div>
+    <!--  advertising space  end -->
+
+    <!-- Primary keys  -->
+    <div class="px-3">
+      <h5 class="pl-5 font-weight-bolder border-bottom pb-2">
+        Popüler Aramalar
+      </h5>
+      <span class="d-inline-block px-2 keys border m-2">ABS</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Acil Durum Asistanı</span
+      >
+      <span class="d-inline-block px-2 keys border m-2"
+        >Adaptif Cruise Control (ACC)</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">AeroDinamik</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Akslar/Araba Aksları</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">Akü-Alarm Sistemi</span>
+    </div>
+    <div class="px-3 mt-5">
+      <h5 class="pl-5 font-weight-bolder border-bottom pb-2">
+        En Çok Aranan İlanlar
+      </h5>
+      <span class="d-inline-block px-2 keys border m-2">ABS</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Acil Durum Asistanı</span
+      >
+      <span class="d-inline-block px-2 keys border m-2"
+        >Adaptif Cruise Control (ACC)</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">AeroDinamik</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Akslar/Araba Aksları</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">Akü-Alarm Sistemi</span>
+    </div>
+    <!-- Primary keys  end-->
+
+    <!--  footer  -->
+    <div class="footer-bg mt-5">
+      <div class="row p-5 m-0 justify-content-center">
+        <div
+          class="col-12 col-sm-6 col-sm-7 col-md-4 col-lg-3 px-3 text-center"
+        >
+          <a href="index.html">
+            <img src="images/logo.png" width="80%" />
+          </a>
+          <p class="text-muted text-left mt-3 footer-text">
+            Araba aksesuarlarınız için en iyi parça mağazasıdır. Ne tür
+            parçalara ihtiyacınız var ise buradan alabilirsiniz.
+          </p>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">Bilgi</p>
+          <a class="footer-text text-muted cursor-pointer">Kampanyalar</a><br />
+          <a class="footer-text text-muted cursor-pointer">İletişim</a><br />
+          <a class="footer-text text-muted cursor-pointer">Servisler</a><br />
+          <a class="footer-text text-muted cursor-pointer">Biz kimiz?</a><br />
+          <a class="footer-text text-muted cursor-pointer">Kariyer</a>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">Anasayfa</p>
+          <a class="footer-text text-muted cursor-pointer">Hakkımızda</a><br />
+          <a class="footer-text text-muted cursor-pointer">Ürünler</a><br />
+          <a class="footer-text text-muted cursor-pointer">Galeri</a><br />
+          <a class="footer-text text-muted cursor-pointer">Blog</a><br />
+          <a class="footer-text text-muted cursor-pointer">İletişim</a>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">Destek</p>
+          <a class="footer-text text-muted cursor-pointer">Kurye İşlemleri</a
+          ><br />
+          <a class="footer-text text-muted cursor-pointer">İletişim</a><br />
+          <a class="footer-text text-muted cursor-pointer">İade politikasi</a
+          ><br />
+          <a class="footer-text text-muted cursor-pointer">Çevrimiçi destek</a
+          ><br />
+          <a class="footer-text text-muted cursor-pointer">Para iade</a>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">İletişim</p>
+          <a class="footer-text text-muted"
+            >Osmanağa Cad. Moda No:12/4 Kadıköy-İstanbul</a
+          ><br />
+          <a class="footer-text text-muted">info@araba.com</a><br />
+          <a class="footer-text text-muted">0 212-123 45 69</a><br />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center p-2 text-light">
+      Tüm hakları Canmer Grup'a aittir.
+    </div>
+    <!--  footer end  -->
+
+    <!-- basket modal  -->
+    <div
+      class="modal position-absolute basket-modal-icon"
+      id="basketModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="basketModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable basket-modal"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-between">
+              <h6 class="text-warning">Sepetim(1 Ürün)</h6>
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="border-bottom pb-3">
+              <div class="row m-0 mt-3 justify-content-between">
+                <h6 class="basket-title text-left font-weight-bolder">
+                  315/75R16 MAXTREK - MUD TRAC VE PARA DELİK -44 JANT
+                </h6>
+                <i class="far fa-trash-alt text-warning pt-2 btn"></i>
+              </div>
+              <div class="row m-0 justify-content-between">
+                <img
+                  src="images/content1.png"
+                  class="basket-img border shadow"
+                />
+                <div class="d-inline-block pt-4">
+                  <span class="border basket-product-count shadow py-2">
+                    <span class="d-inline-block px-2 btn">-</span>
+                    <span class="d-inline-block px-2">1</span>
+                    <span class="d-inline-block px-2 btn">+</span>
+                  </span>
+                </div>
+                <span class="d-inline-block basket-price-box pt-3">
+                  <span class="basket-first-price text-muted">100 TL</span
+                  ><br />
+                  <span class="font-weight-bolder text-warning">50 TL</span>
+                </span>
+              </div>
+            </div>
+            <div class="row m-0 justify-content-between">
+              <h6 class="text-warning font-weight-bolder">Genel Toplam</h6>
+              <h6 class="text-warning font-weight-bolder">50 TL</h6>
+            </div>
+            <div class="row m-0 justify-content-between">
+              <button class="btn btn-outline-warning mt-3">Sepete Git</button>
+              <button class="btn btn-warning mt-3 text-light">
+                Siparişi Tamamla
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- basket modal end  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function search(ele) {
+        if (event.key === "Enter") {
+          window.location.replace("products.html");
+        }
+      }
+    </script>
+  </body>
+</html>
