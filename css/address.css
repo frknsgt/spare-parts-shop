@@ -166,11 +166,11 @@
 }
 /*  layout end  */
 .address-choose::before {
-  content: "\25B2";
+  content: "\25BC";
   color: white;
   position: absolute;
-  right: 18px;
-  top: 66px;
+  left: 116px;
+  top: 138px;
 }
 
 .btn-bg {
@@ -183,4 +183,21 @@
 
 .check-bg {
   color: #53af16;
+}
+.rules-input {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+.information-text {
+  font-size: 11px;
+  font-weight: 600;
+}
+.address-box {
+  min-width: 195px;
+  max-width: 195px;
+  min-height: 215px;
+}
+.basket-information-box {
+  background-color: #f6f6f6;
 }
