@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Adres</title>
-    <link href="css/address.css" rel="stylesheet" type="text/css" />
+    <title>Adres Ekle</title>
+    <link href="css/add-address.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -169,39 +169,81 @@
       <h4 class="font-weight-bolder w-100 pb-3 border-bottom px-3">Adres</h4>
       <div class="col-12 col-md-8 pl-0 px-3">
         <h6 class="font-weight-bolder">ADRES BİLGİLERİ</h6>
-        <div class="shadow w-100 address-choose p-3">
-          <div class="row px-3">
-            <p class="text-warning">Ev Adresi</p>
-            <i class="fas fa-check check-bg px-3"></i>
-          </div>
-
-          <p>Halitağa mah. cad Kadıköy-İstanbul</p>
-        </div>
-        <div class="row m-0 mt-3">
-          <h6 class="font-weight-bolder">Teslimat Adresleri</h6>
-        </div>
         <div class="row m-0">
-          <div class="d-inline-block p-3 rounded shadow address-box m-3">
-            <div class="row justify-content-between m-0">
-              <p>Ev</p>
-              <input type="checkbox" class="rounded-lg" />
-            </div>
-
-            <p>Faruk Pakiş</p>
-            <p>Mah. Cad.</p>
-            <p>9055***15</p>
-            <div class="text-right w-100">
-              <a class="p-2 rounded">Sil</a>
-              <button class="btn btn-warning btn-bg">Düzenle</button>
-            </div>
+          <div class="col-6 pl-0">
+            <input
+              type="text"
+              placeholder="Ad & Soyad"
+              class="w-100 p-1 border"
+            />
           </div>
-          <div class="d-inline-block p-3 rounded shadow address-box m-3 pt-5">
-            <p class="cursor-pointer text-center">[+]</p>
-            <div class="text-center w-100">
-              <a href="add-address.html" class="cursor-pointer"
-                >Yeni Teslimat Adresi Ekle</a
-              >
-            </div>
+          <div class="col-6 pr-0">
+            <input
+              type="text"
+              placeholder="Cep Telefonu"
+              class="w-100 p-1 border"
+            />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input
+              type="text"
+              class="p-1 w-100 border"
+              placeholder="E-mail Adres"
+            />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input
+              type="text"
+              class="p-1 w-100 border"
+              placeholder="Firma Adı"
+            />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <select type="text" class="p-1 w-100 border" placeholder="Ülke">
+              <option>Türkiye</option>
+              <option>İngiltere</option>
+              <option>Almanya</option>
+            </select>
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input
+              type="text"
+              class="p-1 w-100 border"
+              placeholder="Adres Başlığı"
+            />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input type="text" class="p-1 w-100 border" placeholder="Mahalle" />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input type="text" class="p-1 w-100 border" placeholder="Cadde" />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input type="text" class="p-1 w-100 border" placeholder="Sokak" />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input
+              type="text"
+              class="p-1 w-100 border"
+              placeholder="Apartman Adı"
+            />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input
+              type="text"
+              class="p-1 w-100 border"
+              placeholder="Numara / Kat / Daire"
+            />
+          </div>
+          <div class="col-12 p-0 mt-3">
+            <input
+              type="text"
+              class="p-1 w-100 border"
+              placeholder="Notunuz varsa ekleyin"
+            />
+          </div>
+          <div class="col-12 text-right my-3 px-0">
+            <button class="btn btn-warning text-light">ADRESİ KAYDET</button>
           </div>
         </div>
       </div>
