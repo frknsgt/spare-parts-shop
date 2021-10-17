@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Satıcı Profili</title>
-    <link href="css/seller-profile.css" rel="stylesheet" type="text/css" />
+    <title>Giriş</title>
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -26,9 +26,10 @@
   <body class="p-0">
     <!-- banner -->
     <div class="row m-0 banner justify-content-between px-3 pl-5 pl-lg-3">
-      <a href="index.html" class="banner-logo px-3 pb-3">
-        <img src="../images/logo.png" class="mh-100 mw-100" />
+      <a href="index.html" class="px-3 pb-3 banner-logo">
+        <img src="images/logo.png" class="mh-100 mw-100" />
       </a>
+
       <marquee class="mh-100 d-none d-sm-block ml-3 marquee-logos">
         <span
           class="
@@ -41,7 +42,7 @@
             ml-5
           "
         >
-          <img src="../images/audi.png" class="mt-2 banner-logo-img" />
+          <img src="images/audi.png" class="mt-2 banner-logo-img" />
         </span>
         <span
           class="
@@ -54,7 +55,7 @@
             ml-3
           "
         >
-          <img src="../images/bmw.png" class="mt-2 banner-logo-img" />
+          <img src="images/bmw.png" class="mt-2 banner-logo-img" />
         </span>
         <span
           class="
@@ -67,7 +68,7 @@
             ml-3
           "
         >
-          <img src="../images/mercedes.png" class="mt-2 banner-logo-img" />
+          <img src="images/mercedes.png" class="mt-2 banner-logo-img" />
         </span>
         <span
           class="
@@ -80,7 +81,7 @@
             ml-3
           "
         >
-          <img src="../images/rover.png" class="mt-2 banner-logo-img" />
+          <img src="images/rover.png" class="mt-2 banner-logo-img" />
         </span>
         <span
           class="
@@ -93,7 +94,7 @@
             ml-3
           "
         >
-          <img src="../images/hyundai.png" class="mt-2 banner-logo-img" />
+          <img src="images/hyundai.png" class="mt-2 banner-logo-img" />
         </span>
         <span
           class="
@@ -106,7 +107,7 @@
             ml-3
           "
         >
-          <img src="../images/kia.png" class="mt-2 banner-logo-img" />
+          <img src="images/kia.png" class="mt-2 banner-logo-img" />
         </span>
         <span
           class="
@@ -119,7 +120,7 @@
             ml-3
           "
         >
-          <img src="../images/peugeot.png" class="mt-2 banner-logo-img" />
+          <img src="images/peugeot.png" class="mt-2 banner-logo-img" />
         </span>
       </marquee>
       <div class="d-inline-block">
@@ -165,98 +166,26 @@
           onkeydown="search(this)"
         />
       </div>
-      <h4 class="font-weight-bolder pb-3 border-bottom w-100">
-        Satıcının Profili
-      </h4>
-      <div class="w-100 px-3">
-        <div class="institution-box">
-          <div class="w-100 institution-box-header p-3">
-            <img
-              src="images/detail-logo.png"
-              class="institution-logo float-left"
-            />
-            <div class="institution-title font-weight-bolder">
-              CEYLAN OTO LASTİK <br />Ankara
-            </div>
-          </div>
-          <div class="row m-0 mt-3">
-            <div class="col-12 col-sm-6 col-md-4 p-3">
-              <div class="border shadow p-3 h-100">
-                <span class="font-weight-bolder mt-3">Mustafa Ceylan</span
-                ><br />
-                <span class="institution-text">Üyelik Tarihi: Eylül 2021</span>
-                <div class="border border-secondary p-3 my-2">
-                  <span class="font-weight-bolder pt-1">İş</span
-                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <span class="text-muted">0312 222 22 22</span>
-                  <hr class="border-secondary" />
-                  <span class="font-weight-bolder pt-1">Cep</span>&nbsp;&nbsp;
-                  <span class="text-muted">0545 555 55 55</span>
-                </div>
-                <div class="text-center font-weight-bolder cursor-pointer">
-                  <a href="#messageModal" data-toggle="modal">Mesaj Gönder</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-3">
-              <div class="border border-warning p-3 h-100">
-                <span class="comment-seller px-1 bg-white text-warning"
-                  >0 Değerlendirme</span
-                >
-                <p>Kullanıcı yeterli sayıda kargo satışı yapmamıştır.</p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-3">
-              <div
-                class="
-                  row
-                  m-0
-                  p-3
-                  border border-warning
-                  justify-content-between
-                "
-              >
-                <h4 class="d-inline-block font-weight-bolder">
-                  Kargolu satış adedi
-                </h4>
-                <h4 class="d-inline-block">0</h4>
-              </div>
-              <div
-                class="
-                  row
-                  m-0
-                  p-3
-                  mt-4
-                  border border-warning
-                  justify-content-between
-                "
-              >
-                <h4 class="d-inline-block font-weight-bolder">
-                  Şu an satışta olan ürün adedi
-                </h4>
-                <h4 class="d-inline-block">0</h4>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-3">
-              <div
-                class="
-                  row
-                  m-0
-                  p-3
-                  border border-warning
-                  justify-content-between
-                "
-              >
-                <h4 class="d-inline-block font-weight-bolder">
-                  Satıcının İlanları
-                </h4>
-                <h4 class="d-inline-block">
-                  <a href="seller-products.html">İncele</a>
-                </h4>
-              </div>
-            </div>
-          </div>
+      <h1 class="w-100 mt-5 font-weight-bolder text-center">Giriş Yap</h1>
+      <div class="login-box mx-auto p-4 shadow mb-5">
+        <p class="mb-2">E-mail</p>
+        <input type="text" class="px-3 py-2 w-100 border" />
+        <p class="mt-3 mb-2">Şifre</p>
+        <input type="password" class="px-3 py-2 w-100 border" />
+        <div class="row m-0 justify-content-between">
+          <span class="py-3">
+            <input type="checkbox" class="float-left border mt-1" />
+            <span class="text-muted ml-2 login-text">Beni Hatırla</span>
+          </span>
+          <span class="text-danger py-3 ml-3 login-text"
+            ><ins>Şifremi Unuttum</ins></span
+          >
         </div>
+        <button class="btn btn-warning text-light mt-4 w-100">GİRİŞ YAP</button>
+        <p class="text-center mt-3">
+          Hesabım yok.
+          <a href="register.html" class="font-weight-bolder">Kayıt Ol</a>
+        </p>
       </div>
     </div>
 
@@ -428,59 +357,6 @@
       </div>
     </div>
     <!-- basket modal end  -->
-    <!--Modal-->
-    <div
-      class="modal fade"
-      id="messageModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-body p-3 pt-2">
-            <div class="w-100 text-right">
-              <a
-                type="button"
-                class="cursor-pointer text-warning"
-                data-dismiss="modal"
-              >
-                X
-              </a>
-            </div>
-            <h6 class="font-weight-bolder">Konu</h6>
-            <input type="text" placeholder="Konu" class="w-100 p-3" />
-            <h6 class="font-weight-bolder">Açıklama</h6>
-            <textarea
-              name=""
-              placeholder="Açıklama"
-              id=""
-              cols="30"
-              rows="10"
-              class="w-100"
-            ></textarea>
-            <div class="row m-0">
-              <div class="col-12 col-md-3 p-2 pb-md-0">
-                <h6 class="font-weight-bolder w-100 m-0">Dosya Ekle</h6>
-              </div>
-              <div class="col-6 col-md-6 p-2">
-                <input type="text" class="w-100" placeholder="Seç" />
-              </div>
-              <div class="col-6 col-md-3 p-2">
-                <button class="btn btn-warning px-4 add-file-btn rounded-lg">
-                  Yükle
-                </button>
-              </div>
-            </div>
-            <button class="btn btn-warning mt-3 rounded-lg float-right">
-              Gönder
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Modal End-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
