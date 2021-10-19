@@ -34,10 +34,6 @@
   width: 64px;
   height: 64px;
 }
-.banner-logo-img {
-  max-width: 45px;
-  height: 45px;
-}
 .banner-logo1 {
   background-image: url(../images/audi.png);
   animation: imgAnimation 15s infinite alternate;
@@ -52,7 +48,7 @@
 }
 @keyframes imgAnimation {
   0% {
-    background-image: url(../images/audi.png);
+    background-image: url(../images/bmw.png);
   }
   14% {
     background-image: url(../images/bmw.png);
@@ -75,7 +71,7 @@
 }
 @-moz-keyframes imgAnimation {
   0% {
-    background-image: url(../images/audi.png);
+    background-image: url(../images/bmw.png);
   }
   14% {
     background-image: url(../images/bmw.png);
@@ -98,7 +94,7 @@
 }
 @-webkit-keyframes imgAnimation {
   0% {
-    background-image: url(../images/audi.png);
+    background-image: url(../images/bmw.png);
   }
   14% {
     background-image: url(../images/bmw.png);
@@ -121,7 +117,7 @@
 }
 @-o-keyframes imgAnimation {
   0% {
-    background-image: url(../images/audi.png);
+    background-image: url(../images/bmw.png);
   }
   14% {
     background-image: url(../images/bmw.png);
@@ -141,6 +137,10 @@
   100% {
     background-image: url(../images/peugeot.png);
   }
+}
+.banner-logo-img {
+  max-width: 45px;
+  height: 45px;
 }
 
 .banner-logo2 {
@@ -825,10 +825,62 @@
 
 .category-text {
   color: black;
+  max-width: calc(100% - 30px);
 }
 a:hover {
   color: black !important;
   text-decoration: none !important;
+}
+.filter-boxes {
+  max-height: 407px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dddddd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(158, 158, 158);
+}
+.filter-search {
+  width: 94%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: #c4c4c4 1px solid;
+  padding: 5px;
+}
+.filter-checkbox {
+  width: 20px;
+  height: 20px;
+}
+.degree-icon {
+  color: #f3d40b;
 }
 .sidebar-box {
   height: 100%;
@@ -855,6 +907,11 @@ a:hover {
 /* sidebar end */
 
 /*  content  */
+.filter-bar {
+  font-size: smaller;
+  background-color: #eeeeee;
+  max-width: calc(100% - 60px);
+}
 .content-box {
   width: calc(100vw - 332px);
   margin-left: 20px;
@@ -863,73 +920,95 @@ a:hover {
 .carousel-item {
   height: 220px;
 }
-
-/*  form  */
-.form-box {
-  border: solid 5px #373737;
+.dropdown-menu {
+  font-size: small !important;
+  background-color: #eeeeee !important;
 }
-.form-title {
-  background-color: #373737;
-  color: white;
-  font-weight: 900;
-}
-.form-text {
-  font-size: x-small;
-  background-color: #e6e6e6;
-}
-input,
-select {
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}
-option {
-  width: 100%;
-}
-
-.tab {
-  display: none;
-}
-
-button {
-  background-color: #04aa6d;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: Raleway;
+.bar-dropdown-item {
+  display: none !important;
   cursor: pointer;
 }
-
-button:hover {
-  opacity: 0.8;
+.bar-item {
+  cursor: pointer;
+}
+.bar-dropdown {
+  display: inline-block !important;
+}
+@media screen and (min-width: 1120px) {
+  .bar-dropdown {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 955px) and (max-width: 1120px) {
+  .bar-item:nth-last-child(-n + 3) {
+    display: none;
+  }
+  .bar-dropdown-item {
+    display: block !important;
+  }
+  .bar-dropdown-item:nth-child(-n + 3) {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 955px) {
+  .bar-item:nth-last-child(-n + 5) {
+    display: none;
+  }
+  .bar-dropdown-item {
+    display: block !important;
+  }
+  .bar-dropdown-item:nth-child(-n + 1) {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 710px) and (max-width: 767px) {
+  .bar-item {
+    display: inline-block !important;
+  }
+  .bar-item:nth-last-child(-n + 2) {
+    display: none !important;
+  }
+  .bar-dropdown-item {
+    display: block !important;
+  }
+  .bar-dropdown-item:nth-child(-n + 4) {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 710px) {
+  .bar-item {
+    display: inline-block !important;
+  }
+  .bar-item:nth-last-child(-n + 4) {
+    display: none !important;
+  }
+  .bar-dropdown-item {
+    display: block !important;
+  }
+  .bar-dropdown-item:nth-child(-n + 2) {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .bar-item {
+    display: inline-block !important;
+  }
+  .bar-item:nth-last-child(-n + 6) {
+    display: none !important;
+  }
+  .bar-dropdown-item {
+    display: block !important;
+  }
 }
 
-#prevBtn {
-  background-color: #bbbbbb;
+@media screen and (max-width: 768px) {
+  .bar-item {
+    display: inline-block;
+  }
+  .bar-item:nth-last-child(-n + 2) {
+    display: none;
+  }
 }
-.step {
-  height: 45px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-}
-.step-point {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  color: white;
-}
-#nextBtn {
-  background-color: #373737 !important;
-}
-.step.active {
-  background-color: #8a8a8a;
-}
-.step.finish {
-  background-color: #373737;
-  color: white;
-}
-/*  form end  */
-
 @media screen and (max-width: 767px) {
   .sidebar-box {
     background-color: #1a2225 !important;
@@ -945,9 +1024,6 @@ button:hover {
     width: calc(100vw - 10px);
     margin-left: 5px;
   }
-  .slide-box {
-    margin-top: 16px;
-  }
 }
 @media screen and (min-width: 768px) {
   .sidebar-box {
@@ -955,7 +1031,6 @@ button:hover {
     height: auto;
   }
 }
-
 /* cards */
 .cards {
   width: 230px;
@@ -1032,7 +1107,12 @@ button:hover {
 .card-text {
   font-size: 10px;
 }
-
+.active {
+  color: black !important;
+}
+.pagination-numbers {
+  color: #6c757d;
+}
 /* cards end */
 
 /* primary keys */
@@ -1063,9 +1143,6 @@ button:hover {
 /* footer end */
 
 /*  modal  */
-.modal-correct {
-  font-size: 60px;
-}
 .basket-modal {
   position: absolute !important;
   top: 55px !important;
