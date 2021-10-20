@@ -890,3 +890,66 @@
 .basket-information-box {
   background-color: #f6f6f6;
 }
+
+.live-support-icon {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+.support-box {
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  height: 450px;
+  width: 300px;
+  max-height: 70vh;
+  z-index: 1000;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+.support-title {
+  background-color: #1a2225;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+.support-message {
+  font-size: 10px;
+}
+.support-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.support-input-icon1 {
+  position: absolute;
+  bottom: 5px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  cursor: pointer;
+}
+.support-input-icon2 {
+  position: absolute;
+  bottom: 5px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 270px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  cursor: pointer;
+}
