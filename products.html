@@ -1693,6 +1693,45 @@
       </div>
     </div>
     <!-- basket modal end  -->
+    <!--  live support  -->
+    <div class="support-box bg-light" style="display: none" id="liveSupport">
+      <div class="support-title p-3">
+        <div class="row justify-content-between m-0 text-warning">
+          <div class="pt-2 font-weight-bolder">CANLI DESTEK</div>
+          <a
+            class="h1 m-0 text-warning cursor-pointer"
+            onclick="liveSupportClose()"
+            >-</a
+          >
+        </div>
+        <div class="row justify-content-between m-0 text-white">
+          <div class="font-weight-bolder">Çerimiçi</div>
+          <span class="h6 m-0"><i class="fas fa-circle"></i></span>
+        </div>
+      </div>
+      <div class="row p-3 m-0 support-message">
+        Şu anda canlı destek vermek için hazırız.
+      </div>
+      <input
+        type="text"
+        class="support-input border px-5"
+        placeholder="Bir soru sor"
+      />
+      <a class="support-input-icon1 text-warning"
+        ><i class="fas fa-paperclip"></i
+      ></a>
+      <a class="support-input-icon2"><i class="fas fa-paper-plane"></i></a>
+    </div>
+
+    <img
+      id="liveSupportOpen"
+      onclick="liveSupportOpen()"
+      src="images/live-support.png"
+      width="45px"
+      height="45px"
+      class="live-support-icon border rounded-circle"
+    />
+    <!--  live support end  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -1709,6 +1748,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      function liveSupportOpen() {
+        document.getElementById("liveSupport").style.display = "block";
+        document.getElementById("liveSupportOpen").style.display = "none";
+      }
+      function liveSupportClose() {
+        document.getElementById("liveSupport").style.display = "none";
+        document.getElementById("liveSupportOpen").style.display = "block";
+      }
       function search(ele) {
         if (event.key === "Enter") {
           window.location.replace("products.html");
