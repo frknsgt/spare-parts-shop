@@ -1358,7 +1358,7 @@
   height: 24px;
 }
 .marquee-logos {
-  width: calc(100% - 30% - 230px);
+  width: calc(70% - 270px);
 }
 .basket-count {
   height: 14px;
@@ -1424,21 +1424,7 @@
 .modal-correct {
   font-size: 60px;
 }
-.basket-modal {
-  position: absolute !important;
-  top: 55px !important;
-  right: 5px !important;
-  z-index: 10040;
-  overflow: auto;
-  overflow-y: auto;
-}
-.basket-modal-icon::after {
-  content: "\25B2";
-  color: white;
-  position: absolute;
-  right: 18px;
-  top: 66px;
-}
+
 .basket-title {
   max-width: 80%;
   font-size: 14px;
@@ -1465,9 +1451,28 @@
 .basket-first-price {
   text-decoration: line-through;
 }
-@media screen and (max-width: 576px) {
+.basket-modal {
+  position: absolute !important;
+  top: 55px !important;
+  right: 80px !important;
+  z-index: 10040;
+  overflow: auto;
+  overflow-y: auto;
+}
+.basket-modal-icon::after {
+  content: "\25B2";
+  color: white;
+  position: absolute;
+  right: 115px;
+  top: 66px;
+}
+@media screen and (max-width: 575px) {
   .basket-modal {
     top: 73px !important;
+    right: 52px !important;
+  }
+  .basket-modal-icon::after {
+    right: 87px;
   }
 }
 .cursor-pointer {
