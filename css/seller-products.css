@@ -946,7 +946,7 @@ a:hover {
   -o-border-radius: 5px;
   color: white;
 }
-.card-image {
+.card-image border-bottom {
   height: 250px;
   border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
@@ -969,7 +969,7 @@ a:hover {
   .like {
     margin-left: 67px;
   }
-  .card-image {
+  .card-image border-bottom {
     height: 180px;
   }
 }
@@ -980,7 +980,7 @@ a:hover {
   .like {
     margin-left: 100px;
   }
-  .card-image {
+  .card-image border-bottom {
     height: 200px;
   }
 }

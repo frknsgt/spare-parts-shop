@@ -975,3 +975,8 @@
   -o-transform: rotate(45deg);
   cursor: pointer;
 }
+
+.btn-outline-warning:hover {
+  background-color: white !important;
+  color: orange !important;
+}
