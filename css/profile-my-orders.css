@@ -1380,3 +1380,23 @@ a:hover {
 .title-text {
   font-size: 11px;
 }
+
+.title-text-lg {
+  font-size: 25px;
+}
+
+.default-like {
+  color: #eeeeee;
+}
+
+.title-text-xl {
+  font-size: 65px;
+}
+
+.title-text-md {
+  font-size: 13px;
+}
+
+.checkbox-text {
+  width: calc(100% - 25px);
+}
