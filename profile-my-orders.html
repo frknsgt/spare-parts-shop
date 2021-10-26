@@ -448,8 +448,8 @@
                 </p>
               </div>
               <div class="row m-0 justify-content-between w-100">
-                <button class="btn btn-warning text-light mb-3" data-target="#productRatingModal" data-toggle="modal">Ürünü Değerlendir</button>
-                  <button class="btn btn-outline-warning text-warning mb-3" data-target="#storeRatingModal" data-toggle="modal">Mağazayı Değerlendir</button>
+                <button class="btn btn-warning text-light mb-3" data-target="#productRatingModal" data-toggle="modal" data-dismiss="modal">Ürünü Değerlendir</button>
+                  <button class="btn btn-outline-warning mb-3" data-target="#storeRatingModal" data-toggle="modal" data-dismiss="modal">Mağazayı Değerlendir</button>
               </div>
             </div>
             
@@ -795,7 +795,7 @@
               <div class="row justify-content-end"><p class="default-like mr-3">2000</p></div>
               <div class="row m-1"><input type="checkbox" class="btn btn-warning mt-1"><p class="font-weight-bolder mb-2 ml-3">Yorumda adımın gözükmesine izin veriyorum.</p></div>
               <div class="row m-0 w-100">
-                <a href="#thanksModalForStore" class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto" data-toggle="modal" data-target="#thanksModalForStore" data-dismiss="modal">
+                <a href="#thanksModalForProduct" class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto" data-toggle="modal" data-target="#thanksModalForProduct" data-dismiss="modal">
                   Gönder
                 </a>
               </div>
@@ -869,6 +869,7 @@
           </div>
         </div>
       </div>
+      </div>
         <!--Product Rating Modal End-->
         <!--Thanks Modal For Product-->
         <div
@@ -900,7 +901,7 @@
                 <p class="font-weight-bolder ml-5 px-5 mt-3 mb-3 text-success h6">Değerlendirmeniz için teşekkür ederiz</p>
               </div>
               <div class="row m-0 w-100">
-                <button class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto">
+                <button class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto" data-dismiss="modal">
                   Tamam
                 </button>
               </div>
@@ -909,45 +910,6 @@
         </div>
       </div>
         <!--Thanks Modal For Product End-->
-        <!--Tahnsk Modal For Store-->
-        <div
-        class="modal fade"
-        id="thanksModalForStore"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="thanksModalForStore"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-body p-3 pt-2">
-              <div class="row m-0 justify-content-end">
-              <div class="text-right">
-                <a
-                  type="button"
-                  class="cursor-pointer text-warning"
-                  data-dismiss="modal"
-                >
-                  X
-                </a>
-              </div>
-              </div>
-              <div class="row m-0 border-bottom">
-                <div class="row m-0 w-100 justify-content-center">
-                  <i class="fas fa-check-circle text-success title-text-xl"></i>
-                </div>
-                <p class="font-weight-bolder ml-5 px-5 mt-3 mb-3 text-success h6">Değerlendirmeniz için teşekkür ederiz</p>
-              </div>
-              <div class="row m-0 w-100">
-                <button class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto">
-                  Tamam
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <!--Thanks Modal For Store End-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

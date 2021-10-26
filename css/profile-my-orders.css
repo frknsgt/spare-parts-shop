@@ -1400,3 +1400,6 @@ a:hover {
 .checkbox-text {
   width: calc(100% - 25px);
 }
+.btn-outline-warning:hover {
+  color: white !important;
+}
