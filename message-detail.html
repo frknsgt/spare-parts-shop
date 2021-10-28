@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mesajlar</title>
+    <link href="css/message-detail.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,shrink-to-fit=no"
+    />
+  </head>
+
+  <body class="p-0">
+    <!-- banner -->
+    <div class="row m-0 banner justify-content-between px-3 pl-5 pl-lg-3">
+      <a href="index.html" class="px-3 pb-3 banner-logo">
+        <img src="images/logo.png" class="mh-100 mw-100" />
+      </a>
+
+      <div
+        class="mh-100 d-none d-sm-block text-center marquee-logos text-truncate"
+      >
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo1"></div>
+        </div>
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo2"></div>
+        </div>
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo3"></div>
+        </div>
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo4"></div>
+        </div>
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo5"></div>
+        </div>
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo6"></div>
+        </div>
+        <div
+          class="
+            mt-3
+            mr-5
+            p-2
+            bg-white
+            rounded-circle
+            d-inline-block
+            text-center
+            banner-logos
+          "
+        >
+          <div class="banner-logo-box banner-logo7"></div>
+        </div>
+      </div>
+      <div class="d-inline-block">
+        <a
+          class="ml-0 ml-sm-5 icons-link"
+          href="#searchInput"
+          data-toggle="collapse"
+          data-target="#searchInput"
+          ><i class="fas fa-search icons mt-0"></i
+        ></a>
+        <a
+          class="icons-link ml-2 ml-sm-4"
+          href="#basketModal"
+          data-toggle="modal"
+          data-target="#basketModal"
+          data-backdrop="false"
+        >
+          <i class="fas fa-shopping-bag icons mt-0"></i>
+          <span class="badge badge-warning text-light basket-count">1</span>
+        </a>
+        <a class="icons-link ml-2 ml-sm-4" href="messages.html">
+          <i class="far fa-envelope icons mt-0"></i>
+          <span class="badge badge-warning text-light basket-count">1</span>
+        </a>
+        <a href="login.html" class="icons-link ml-2 ml-sm-4"
+          ><i class="far fa-user-circle icons"></i
+        ></a>
+      </div>
+    </div>
+    <!--  banner end  -->
+
+    <!--  sidebar and content  -->
+    <div class="row m-0 px-md-4 mt-md-3">
+      <div
+        class="w-100 collapse mb-md-3 mt-md-0 font-weight-bolder"
+        id="searchInput"
+      >
+        <a
+          class="search-close"
+          href="#searchInput"
+          data-toggle="collapse"
+          data-target="#searchInput"
+          >X</a
+        >
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Site içi ürün arama"
+          onkeydown="search(this)"
+        />
+      </div>
+      <!--  sidebar   -->
+      <div
+        class="w3-bar-block w3-card w3-animate-left sidebar-box p-0 rounded"
+        id="mySidebar"
+      >
+        <button
+          class="w3-bar-item w3-button w3-large text-right d-block d-md-none"
+          onclick="w3_close()"
+        >
+          &times;
+        </button>
+        <div class="row m-0 px-3 my-3 justify-content-between">
+          <span>
+            <img
+              src="images/message1.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <p class="user-name mb-0 pt-2 font-weight-bolder float-left">
+              Aras Bulut
+            </p>
+          </span>
+          <a class="cursor-pointer pt-2"><i class="fas fa-ellipsis-h"></i></a>
+        </div>
+        <p class="font-weight-bolder message-font px-3 mt-4">
+          Sohbet
+          <span class="badge badge-warning rounded-circle p-1 text-white"
+            >14</span
+          >
+        </p>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message2.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Yedek Parçacı Dünyası
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Otomobil parça talebininiz başarıyla alınmıştır.
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message3.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Mehmet Ozan Dolunay
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message4.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Öner Erkan
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message5.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Çağlar Ertuğrul
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message6.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Kıvanç Tatlıtuğ
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message7.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Cansel Elçin
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message8.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Barış Arduç
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message9.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Ahmet Rıfat Şungar
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message10.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Engin Öztürk
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+        <div class="row m-0 px-3 mt-3 justify-content-between">
+          <span>
+            <img
+              src="images/message2.png"
+              width="40px"
+              height="40px"
+              class="rounded-circle bg-white border border-dark float-left"
+            />
+            <span class="float-left">
+              <p class="user-name mb-0 p-0 font-weight-bolder message-font">
+                Yedek Parçacı Dünyası
+              </p>
+              <p class="user-name p-0 text-muted mb-0 message-small">
+                Merhaba, elinizdeki modelin kış lastiği var mı?
+              </p>
+            </span>
+          </span>
+          <span
+            class="
+              message-font
+              mt-2
+              badge badge-warning
+              py-1
+              px-2
+              text-white
+              rounded-circle
+              d-inline-block
+              message-count
+            "
+            >1</span
+          >
+        </div>
+      </div>
+      <a
+        id="openNav"
+        class="w3-xlarge category-open-menu d-block d-md-none p-2"
+        onclick="w3_open()"
+      >
+        &#9776;
+      </a>
+      <!--  sidebar end  -->
+
+      <!--  content  -->
+      <div class="content-box px-3 pt-3">
+        <div class="card messages-box p-4">
+          <div class="row m-0">
+            <input
+              type="text"
+              class="mw-100 py-1 pr-3 pl-4 border-0 bg-light"
+              placeholder="Ara"
+            />
+            <span class="search-icon"
+              ><i class="fas fa-search text-muted"></i
+            ></span>
+          </div>
+          <div class="row m-0 mt-3 justify-content-between">
+            <span class="mb-2">
+              <span class="user-text mr-2">Yedek Parçacı Dünyası</span
+              ><span class="text-muted mr-1 message-font">online</span
+              ><span class="text-success online-icon pt-1"
+                ><i class="fas fa-circle"></i
+              ></span>
+            </span>
+            <span>
+              <a class="px-2 py-1 text-light btn btn-warning message-font mr-2"
+                ><i class="fas fa-exclamation-triangle mr-1"></i>Şikayet Et</a
+              >
+              <a class="px-2 py-1 text-light btn btn-dark message-font mr-2"
+                ><i class="fas fa-times mr-1"></i>Engelle</a
+              >
+              <a class="px-2 py-1 btn btn-outline-dark message-font mr-2"
+                ><i class="fas fa-trash-alt mr-1"></i
+              ></a>
+            </span>
+          </div>
+          <div
+            class="
+              row
+              m-0
+              mt-3
+              p-3
+              justify-content-between
+              product-box
+              bg-light
+            "
+          >
+            <span>
+              <img
+                src="images/content3.png"
+                width="60px"
+                height="70px"
+                class="shadow float-left mr-2"
+              />
+              <span class="float-left product-text">
+                <p class="m-0 text-truncate user-text">Otomobil Parça Talebi</p>
+                <p class="m-0 text-truncate user-text mt-2">
+                  Clio,JOY 1.0 Sce 65 bg,2021,manuel,...
+                </p>
+                <p class="m-0 text-truncate message-font mt-2">Ankara</p>
+              </span>
+            </span>
+            <span class="message-font mt-3 text-muted pt-2">11.11.2021</span>
+          </div>
+          <div class="message-content">
+            <div class="row m-0 mt-4">
+              <img
+                src="images/single-logo.png"
+                width="60px"
+                height="60px"
+                class="float-left mr-3 seller-photo"
+              />
+              <span class="message-mw mt-2">
+                <span
+                  class="
+                    message-font
+                    seller-message-box
+                    text-white
+                    px-3
+                    py-2
+                    d-inline-block
+                  "
+                  >Otomobil parça talebiniz başarıyla alınmıştır. <br />
+                  Takip numaranız: 123123123</span
+                ><br />
+                <span class="message-date text-muted ml-2"
+                  >12.12.2021 08:55</span
+                >
+              </span>
+            </div>
+            <div class="row m-0 mt-4">
+              <span class="ml-auto text-right product-message">
+                <span
+                  class="
+                    message-font
+                    text-left
+                    seller-message-box
+                    bg-warning
+                    text-white
+                    p-3
+                    d-inline-block
+                  "
+                  >Teşekkür ederim çok hızlı yanıt verdiğiniz için.</span
+                ><br />
+                <span class="message-date text-muted ml-2"
+                  >12.12.2021 08:55</span
+                >
+              </span>
+            </div>
+          </div>
+          <div class="row m-0 send-message">
+            <a class="cursor-pointer"
+              ><i class="far fa-image h4 m-0 mr-3"></i
+            ></a>
+            <a class="cursor-pointer"
+              ><i class="far fa-smile h4 m-0 pr-3 border-right mr-3"></i
+            ></a>
+            <input
+              type="text"
+              class="border-0 message-input px-3 py-1"
+              placeholder="Bir mesaj yazın"
+            />
+            <a class="cursor-pointer send-icon-box"
+              ><i class="fas fa-paper-plane h4 m-0 send-icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--  content end  -->
+    </div>
+    <!--  sidebar and content end  -->
+
+    <div class="container text-center mb-5 mt-5 px-5">
+      <img src="images/reklamFooter.png" width="100%" height="200px" />
+    </div>
+    <!-- Primary keys  -->
+    <div class="px-3">
+      <h5 class="pl-5 font-weight-bolder border-bottom pb-2">
+        Popüler Aramalar
+      </h5>
+      <span class="d-inline-block px-2 keys border m-2">ABS</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Acil Durum Asistanı</span
+      >
+      <span class="d-inline-block px-2 keys border m-2"
+        >Adaptif Cruise Control (ACC)</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">AeroDinamik</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Akslar/Araba Aksları</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">Akü-Alarm Sistemi</span>
+    </div>
+    <div class="px-3 mt-5">
+      <h5 class="pl-5 font-weight-bolder border-bottom pb-2">
+        En Çok Aranan İlanlar
+      </h5>
+      <span class="d-inline-block px-2 keys border m-2">ABS</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Acil Durum Asistanı</span
+      >
+      <span class="d-inline-block px-2 keys border m-2"
+        >Adaptif Cruise Control (ACC)</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">AeroDinamik</span>
+      <span class="d-inline-block px-2 keys border m-2"
+        >Akslar/Araba Aksları</span
+      >
+      <span class="d-inline-block px-2 keys border m-2">Akü-Alarm Sistemi</span>
+    </div>
+    <!-- Primary keys  end-->
+
+    <!--  footer  -->
+    <div class="footer-bg mt-5">
+      <div class="row p-5 m-0 justify-content-center">
+        <div
+          class="col-12 col-sm-6 col-sm-7 col-md-4 col-lg-3 px-3 text-center"
+        >
+          <a href="index.html">
+            <img src="images/logo.png" width="80%" />
+          </a>
+          <p class="text-muted text-left mt-3 footer-text">
+            Araba aksesuarlarınız için en iyi parça mağazasıdır. Ne tür
+            parçalara ihtiyacınız var ise buradan alabilirsiniz.
+          </p>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">Bilgi</p>
+          <a class="footer-text text-muted cursor-pointer">Kampanyalar</a><br />
+          <a class="footer-text text-muted cursor-pointer">İletişim</a><br />
+          <a class="footer-text text-muted cursor-pointer">Servisler</a><br />
+          <a class="footer-text text-muted cursor-pointer">Biz kimiz?</a><br />
+          <a class="footer-text text-muted cursor-pointer">Kariyer</a>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">Anasayfa</p>
+          <a class="footer-text text-muted cursor-pointer">Hakkımızda</a><br />
+          <a class="footer-text text-muted cursor-pointer">Ürünler</a><br />
+          <a class="footer-text text-muted cursor-pointer">Galeri</a><br />
+          <a class="footer-text text-muted cursor-pointer">Blog</a><br />
+          <a class="footer-text text-muted cursor-pointer">İletişim</a>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">Destek</p>
+          <a class="footer-text text-muted cursor-pointer">Kurye İşlemleri</a
+          ><br />
+          <a class="footer-text text-muted cursor-pointer">İletişim</a><br />
+          <a class="footer-text text-muted cursor-pointer">İade politikasi</a
+          ><br />
+          <a class="footer-text text-muted cursor-pointer">Çevrimiçi destek</a
+          ><br />
+          <a class="footer-text text-muted cursor-pointer">Para iade</a>
+        </div>
+        <div class="col px-3">
+          <p class="text-light">İletişim</p>
+          <a class="footer-text text-muted"
+            >Osmanağa Cad. Moda No:12/4 Kadıköy-İstanbul</a
+          ><br />
+          <a class="footer-text text-muted">info@araba.com</a><br />
+          <a class="footer-text text-muted">0 212-123 45 69</a><br />
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center p-2 text-light">
+      Tüm hakları Canmer Grup'a aittir.
+    </div>
+    <!--  footer end  -->
+
+    <!-- basket modal  -->
+    <div
+      class="modal position-absolute basket-modal-icon"
+      id="basketModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="basketModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable basket-modal"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-between">
+              <h6 class="text-warning">Sepetim(1 Ürün)</h6>
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="border-bottom pb-3">
+              <div class="row m-0 mt-3 justify-content-between">
+                <h6 class="basket-title text-left font-weight-bolder">
+                  315/75R16 MAXTREK - MUD TRAC VE PARA DELİK -44 JANT
+                </h6>
+                <i class="far fa-trash-alt text-warning pt-2 btn"></i>
+              </div>
+              <div class="row m-0 justify-content-between">
+                <img
+                  src="images/content1.png"
+                  class="basket-img border shadow"
+                />
+                <div class="d-inline-block pt-4">
+                  <span class="border basket-product-count shadow py-2">
+                    <span class="d-inline-block px-2 btn">-</span>
+                    <span class="d-inline-block px-2">1</span>
+                    <span class="d-inline-block px-2 btn">+</span>
+                  </span>
+                </div>
+                <span class="d-inline-block basket-price-box pt-3">
+                  <span class="basket-first-price text-muted">100 TL</span
+                  ><br />
+                  <span class="font-weight-bolder text-warning">50 TL</span>
+                </span>
+              </div>
+            </div>
+            <div class="row m-0 justify-content-between">
+              <h6 class="text-warning font-weight-bolder">Genel Toplam</h6>
+              <h6 class="text-warning font-weight-bolder">50 TL</h6>
+            </div>
+            <div class="row m-0 justify-content-between">
+              <a class="btn btn-outline-warning mt-3" href="basket.html">
+                Sepete Git
+              </a>
+              <a class="btn btn-warning mt-3 text-light" href="address.html">
+                Siparişi Tamamla
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- basket modal end  -->
+    <!--  live support  -->
+    <div class="support-box bg-light" style="display: none" id="liveSupport">
+      <div class="support-title p-3">
+        <div class="row justify-content-between m-0 text-warning">
+          <div class="pt-2 font-weight-bolder">CANLI DESTEK</div>
+          <a
+            class="h1 m-0 text-warning cursor-pointer"
+            onclick="liveSupportClose()"
+            >-</a
+          >
+        </div>
+        <div class="row justify-content-between m-0 text-white">
+          <div class="font-weight-bolder">Çevrimiçi</div>
+          <span class="h6 m-0"><i class="fas fa-circle"></i></span>
+        </div>
+      </div>
+      <div class="row p-3 m-0 support-message">
+        Şu anda canlı destek vermek için hazırız.
+      </div>
+      <input
+        type="text"
+        class="support-input border px-5 py-2"
+        placeholder="Bir soru sor"
+      />
+      <a class="support-input-icon1 text-warning"
+        ><i class="fas fa-paperclip"></i
+      ></a>
+      <a class="support-input-icon2"><i class="fas fa-paper-plane"></i></a>
+    </div>
+
+    <img
+      id="liveSupportOpen"
+      onclick="liveSupportOpen()"
+      src="images/live-support.png"
+      width="45px"
+      height="45px"
+      class="live-support-icon border rounded-circle"
+    />
+    <!--  live support end  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function liveSupportOpen() {
+        document.getElementById("liveSupport").style.display = "block";
+        document.getElementById("liveSupportOpen").style.display = "none";
+      }
+      function liveSupportClose() {
+        document.getElementById("liveSupport").style.display = "none";
+        document.getElementById("liveSupportOpen").style.display = "block";
+      }
+      function search(ele) {
+        if (event.key === "Enter") {
+          window.location.replace("products.html");
+        }
+      }
+      function w3_open() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("openNav").style.display = "none";
+        document.getElementById("categoryMenu").classList.add("show");
+      }
+      function w3_close() {
+        document.getElementById("mySidebar").style.width = "0px";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>
