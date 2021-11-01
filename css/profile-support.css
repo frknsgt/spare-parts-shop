@@ -1221,3 +1221,6 @@ a:hover {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+.delete-message-btn {
+  min-width: 150px;
+}
