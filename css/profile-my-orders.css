@@ -1403,3 +1403,19 @@ a:hover {
 .btn-outline-warning:hover {
   color: white !important;
 }
+.alertify-notifier .ajs-message.ajs-visible {
+  padding: 5px 15px !important;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  color: white !important;
+  font-size: 12px;
+}
+.alertify-notifier .ajs-message.ajs-success {
+  background-color: #53af16 !important;
+}
+.alertify-notifier .ajs-message.ajs-error {
+  background-color: #f80808 !important;
+}
