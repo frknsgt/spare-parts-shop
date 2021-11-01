@@ -1213,3 +1213,6 @@ a:hover {
   -o-transform: rotate(45deg);
   cursor: pointer;
 }
+.inform-title {
+  max-width: 80%;
+}
