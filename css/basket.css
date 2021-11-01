@@ -962,3 +962,6 @@
 .delete-basket-text {
   font-size: 12px;
 }
+.add-basket-btn {
+  width: 40%;
+}
