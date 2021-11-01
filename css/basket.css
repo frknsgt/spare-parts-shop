@@ -954,3 +954,11 @@
   background-color: white !important;
   color: orange !important;
 }
+.delete-basket-product {
+  font-weight: 900;
+  color: black;
+  text-shadow: 0px 1px 0px black;
+}
+.delete-basket-text {
+  font-size: 12px;
+}
