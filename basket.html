@@ -366,8 +366,10 @@
             </div>
             <div>
               <a
-                href="payment.html"
+                href="#basketWait"
                 class="btn btn-warning text-light w-100 rounded-lg"
+                data-toggle="modal"
+                data-target="#basketWait"
               >
                 ÖDEMEYE DEVAM ET
               </a>
@@ -1061,6 +1063,58 @@
       </div>
     </div>
     <!--Added product basket End-->
+
+    <!--Please Wait-->
+    <div
+      class="modal fade"
+      id="basketWait"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="basketWait"
+      aria-hidden="true"
+    >
+      <div
+        class="
+          modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable
+        "
+      >
+        <div class="modal-content">
+          <div class="modal-body p-3 pt-2">
+            <div class="row m-0 justify-content-end">
+              <div class="text-right">
+                <a
+                  type="button"
+                  class="cursor-pointer text-warning"
+                  data-dismiss="modal"
+                >
+                  X
+                </a>
+              </div>
+            </div>
+            <div class="row m-0 border-bottom">
+              <p
+                class="
+                  font-weight-bolder
+                  text-center text-muted
+                  w-100
+                  mt-3
+                  mb-3
+                  h6
+                "
+              >
+                İşleminiz yapılıyor. Lütfen bekleyiniz.
+              </p>
+            </div>
+            <div class="row m-0 w-100 justify-content-center px-2 mt-3">
+              <div class="spinner-border spinner-style" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Please Wait End-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -965,3 +965,7 @@
 .add-basket-btn {
   width: 40%;
 }
+.spinner-style {
+  border: 5px dotted gray !important;
+  border-right-color: transparent !important;
+}
