@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Anasayfa</title>
-    <link href="css/homepage-form-1.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -183,7 +183,12 @@
       </div>
       <!--  sidebar   -->
       <div
-        class="w3-bar-block w3-card w3-animate-left sidebar-box p-0"
+        class="
+          w3-bar-block w3-card w3-animate-left
+          sidebar-box
+          text-truncate
+          p-0
+        "
         id="mySidebar"
       >
         <button
@@ -210,17 +215,43 @@
           </div>
         </div>
         <div class="pl-2 collapse show" id="categoryMenu">
-          <a
-            class="category-text row m-0 my-2"
-            data-toggle="collapse"
-            href="#otomobil"
-            role="button"
-            aria-expanded="false"
-            aria-controls="otomobil"
-          >
+          <a class="category-text car-menu row m-0 my-2">
             <i class="fas fa-car mr-2 mt-1"></i> Otomobil
           </a>
-          <div class="collapse" id="otomobil">
+          <div class="car-menu car-menu-content p-3">
+            <div class="row m-0">
+              <div class="col-sm-3 col-6">
+                <a class="cursor-pointer text-light"><p>Alfa Romeo</p></a>
+                <a class="cursor-pointer text-light"><p>Aston Martin</p></a>
+                <a class="cursor-pointer text-light"><p>Audi</p></a>
+                <a class="cursor-pointer text-light"><p>Bentley</p></a>
+                <a class="cursor-pointer text-light"><p>BMW</p></a>
+                <a class="cursor-pointer text-light"><p>Bugatti</p></a>
+                <a class="cursor-pointer text-light"><p>Buick</p></a>
+                <a class="cursor-pointer text-light"><p>Cadillac</p></a>
+                <a class="cursor-pointer text-light"><p>Mercedes Benz</p></a>
+                <a class="cursor-pointer text-light"><p>BMW</p></a>
+                <a class="cursor-pointer text-light"><p>Volkswagen</p></a>
+                <a class="cursor-pointer text-light"><p>Opel</p></a>
+                <a class="cursor-pointer text-light"><p>Renault</p></a>
+              </div>
+              <div class="col-sm-3 col-6 mb-3">
+                <a class="cursor-pointer text-light"><p>Ateşleme</p></a>
+                <a class="cursor-pointer text-light"><p>Egzoz</p></a>
+                <a class="cursor-pointer text-light"><p>Filtre</p></a>
+              </div>
+              <div class="col-sm-6 col-12">
+                <img src="images/sidebar1.png" class="w-100" />
+                <div class="w-50 pr-2 pt-3 float-left">
+                  <img src="images/sidebar2.png" class="w-100" />
+                </div>
+                <div class="w-50 pl-2 pt-3 float-left">
+                  <img src="images/sidebar3.png" class="w-100" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="collapse" id="otomobil">
             <a
               class="category-text pl-5 row"
               data-toggle="collapse"
@@ -263,7 +294,7 @@
               <a class="category-text row m-0 cursor-pointer">Egzoz</a>
               <a class="category-text row m-0 cursor-pointer">Filtre</a>
             </div>
-          </div>
+          </div> -->
         </div>
         <a class="category-text row m-0 my-2 pl-2">
           <i class="fas fa-car-side mr-2 mt-1"></i> Araç Bakım Seti
@@ -1488,10 +1519,12 @@
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("openNav").style.display = "none";
         document.getElementById("categoryMenu").classList.add("show");
+        document.getElementById("mySidebar").classList.remove("text-truncate");
       }
       function w3_close() {
         document.getElementById("mySidebar").style.width = "0px";
         document.getElementById("openNav").style.display = "inline-block";
+        document.getElementById("mySidebar").classList.add("text-truncate");
       }
       var currentTab = 0; // Current tab is set to be the first tab (0)
       showTab(currentTab); // Display the current tab

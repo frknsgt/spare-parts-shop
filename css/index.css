@@ -825,6 +825,7 @@
 
 .category-text {
   color: black;
+  cursor: pointer;
 }
 a:hover {
   color: black !important;
@@ -833,10 +834,10 @@ a:hover {
 .sidebar-box {
   height: 100%;
   background-color: #fff;
-  position: static;
+  position: static !important;
   z-index: 100;
-  overflow: auto;
   float: left;
+  overflow: auto;
 }
 .sidebar-box::-webkit-scrollbar-track {
   background-color: transparent;
@@ -937,6 +938,8 @@ button:hover {
     width: 0;
     position: absolute !important;
     float: none;
+    overflow: unset;
+    height: auto;
   }
   .category-text {
     color: white;
@@ -1186,3 +1189,42 @@ button:hover {
   cursor: pointer;
 }
 /*  live support end  */
+.car-menu-content {
+  display: none;
+  position: absolute;
+  background-color: #1a2225;
+  color: white;
+  margin-left: 243px;
+  min-width: 600px;
+  max-width: 800px;
+  margin-top: -37px;
+}
+.car-menu:hover ~ .car-menu-content {
+  display: inline-block !important;
+}
+.car-menu-content:hover {
+  display: block;
+}
+@media screen and (max-width: 900px) {
+  .car-menu-content {
+    margin-left: 240px;
+    min-width: 400px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .car-menu-content {
+    margin-left: 80px;
+    min-width: 400px;
+    max-width: 500px;
+    border: solid rgb(66, 66, 66) 0.25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .car-menu-content {
+    margin-left: 60px;
+    min-width: 250px;
+    max-width: 350px;
+    border: solid rgb(66, 66, 66) 0.25px;
+  }
+}
