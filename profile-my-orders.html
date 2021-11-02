@@ -10,7 +10,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -204,7 +203,6 @@
           />
           <h6 class="user-name font-weight-bolder">Faruk Pakiş</h6>
         </div>
-
         <div class="pl-3 collapse show" id="categoryMenu">
           <a
             class="category-text row m-0 my-2 h6 font-weight-bold"
@@ -321,140 +319,184 @@
 
       <!--  content  -->
       <div class="content-box px-3">
-        <div class="row m-0 title-text">
-            <div class="col-4">
-                <a class="text-muted cursor-pointer"> < Tüm Siparişlerime Dön</p>
-            </div>
-            <div class="col-4">
-                <a class="text-muted cursor-pointer"><i class="fas fa-trash-alt mr-2"></i>Siparişini Sil</a>
-            </div>
-            <div class="col-4">
-                <a class="text-muted cursor-pointer">Mesafeli Satış Sözleşmesi Ön Bilgilendirme Formu</a>
-            </div>
-        </div>
-        <div class="row m-0 border shadow bg-light">
-            <div class="col-3">
-                <h5 class="font-weight-bolder mt-4">Sipariş Detayı</h5>
-            </div>
-            <div class="col-3">
-                <div class="row m-0">
-                    <h6 class="font-weight-bolder">Sipariş Tarihi</h6>
-                </div>
-                <div class="row m-0">
-                    <p>5 Nisan-16:02</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="row m-0">
-                    <h6 class="font-weight-bolder">Sipariş Özeti</h6>
-                </div>
-                <div class="row m-0">
-                    <p>1 Teslimat , 1 Ürün</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="row m-0">
-                    <h6 class="font-weight-bolder">Sipariş No</h6>
-                </div>
-                <div class="row m-0">
-                    <p>561703671</p>
-                </div>
-            </div>
-        </div>
-        <div class="row m-0 p-0">
-            <div class="col-6 mt-3 p-0">
-                <div class="border h-100"><div class="row m-0 bg-light p-0 m-0  px-3 py-1"><p class="font-weight-bolder ml-2">Teslimat Bilgileri</p></div>
-                <div class="row m-0">
-                    <div class="col-12 ml-2">
-                        <p class="mt-2">Faruk Pakiş</p> 
-                    <p class="mt-5">Osmanağa Mah, Halitağa Cd. No:12/3, 34716 <br>
-                    Kadıköy/İstanbul</p>
-                    </div>
-                    </div></div>
-            </div>
-            <div class="col-6 p-0 pl-3 mt-3">
-                <div class="border ml-auto">
-                    <div class="row m-0  px-2 bg-light p-0 m-0 px-3 py-1"><p class="font-weight-bolder">Ödeme Bilgileri</p></div>
-                    <div class="row m-0 ml-2 mr-2 px-2 mt-2 border-bottom"><p class="text-left">Ürün Toplamı</p> <p class="ml-auto">100 TL</p></div>
-                    <div class="row m-0 ml-2 mr-2 px-2 border-bottom mt-2"><p class="text-left">Kargo Tutarı</p> <p class="ml-auto">10 TL</p></div>
-                    <div class="row m-0 ml-2 mr-2 px-2 border-bottom mt-2"><p class="text-left">Sepette %50 İndirim</p> <p class="ml-auto text-danger">-50 TL</p></div>
-                    <div class="row m-0 ml-2 mr-2 px-2 border-bottom mt-2"><p class="text-left font-weight-bolder">Toplam</p> <p class="ml-auto text-warning">60 TL</p></div>
-                </div>
-            </div>
-        </div>
-        <div class="row m-0 justify-content-between border bg-light p-3 mt-3">
-            <div class="row m-0">
-              <div class="float-left mr-2">
-                <p class="font-weight-bolder h6">Teslimat No:</p>
-                <p class="m-0">#123456789</p>
-              </div>
-              <div class="float-left mr-2">
-                <p class="ml-5 font-weight-bolder h6">Tahmini Teslimat</p>
-                <p  class="ml-5">6-12 Nisan</p>
-              </div>
-              <div class="float-left mr-2">
-                <p class="ml-5 font-weight-bolder h6">Satıcı</p>
-                <p  class="ml-5 float-left">Aykut Yedek Parça</p> <button class="btn btn-outline-warning rounded ml-2 btn-hgt text-warning float-left">Takip Et</button>
-              </div>
-            </div>
-            <div class="row m-0 pr-3">
-              <a onclick="sendBillAlertify()" class="mr-5"><i class="fas fa-clipboard-list h4 text-warning cursor-pointer float-left mr-2"></i><p class="mr-3 cursor-pointer float-left">Fatura Gönder</p></a>
-              <a href="profile-easy-return.html"><i class="fas fa-box text-warning cursor-pointer float-left mr-2 h4"></i><p class="cursor-pointer float-left">Kolay iade</p></a>
-            </div>
-        </div>
-        <div class="border">
-          <div class="row justify-content-center text-center m-0 mt-4">
-            <div class="stepper-wrapper">
-              <div class="stepper-item completed">
-                <div class="step-counter"></div>
-                <div class="step-name text-success"><i class="far fa-thumbs-up mr-2"></i>Sipariş Alındı</div>
-              </div>
-              <div class="stepper-item completed">
-                <div class="step-counter"></div>
-                <div class="step-name text-success"><i class="fas fa-box-open mr-2"></i>Siparişiniz Hazırlanıyor</div>
-              </div>
-              <div class="stepper-item completed">
-                <div class="step-counter"></div>
-                <div class="step-name text-success"><i class="fas fa-truck mr-2"></i>Kargoya verildi</div>
-              </div>
-              <div class="stepper-item completed">
-                <div class="step-counter"></div>
-                <div class="step-name text-success"><i class="fas fa-map-marked-alt mr-2"></i>Teslimat Noktasına Ulaştı</div>
-              </div>
-              <div class="stepper-item completed">
-                <div class="step-counter"></div>
-                <div class="step-name text-success"><i class="fas fa-check mr-2"></i>Teslim Edildi</div>
-              </div>
-            </div>
-          </div>
+        <h6 class="font-weight-bolder">Siparişlerim</h6>
+        <div class="row m-0 justify-content-between  mt-4">
           <div>
-            <h5 class="font-weight-bolder pl-3">Aşağıdaki 1 ürün teslim edilmiştir.</h5>
-            <p class="pl-3">Tahmini Teslim Tarihi :5-8 Nisan</p>
+            <input type="text" class="bg-light border p-1 pl-4 mb-3" placeholder="Siparişlerimde ara.."><span><i class="fas fa-search search-icon cursor-pointer"></i></span>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="row border p-2 m-2">
-              <div class="d-inline-block float-left p-3">
-                <img src="images/detail3.png" height="90px" width="90px" />
-              </div>
-              <div class="col">
-                <h6 class="m-0">Aykut Yedek Parça</h6>
-                <p class="m-0">Gümüş Debriyaj</p>
-                <p class="text-muted m-0">
-                  Beden: Tek Ebat -
-                  <span class="text-danger"> Son 1 Ürün</span>
-                </p>
-                <p class="m-0">
-                  <del class="text-right text-muted">100.00 TL</del>
-                  <span class="text-left text-warning">50.00 TL</span>
-                </p>
-              </div>
-              <div class="row m-0 justify-content-between w-100">
-                <button class="btn btn-warning text-light mb-3" data-target="#productRatingModal" data-toggle="modal" data-dismiss="modal">Ürünü Değerlendir</button>
-                  <button class="btn btn-outline-warning mb-3" data-target="#storeRatingModal" data-toggle="modal" data-dismiss="modal">Mağazayı Değerlendir</button>
-              </div>
-            </div>
-            
+          <div class="row m-0 mb-3">
+            <p class="mt-2 mb-0">Tarihe Göre Listele</p>
+          <div
+          class="
+            dropdown
+            bar-dropdown
+            float-left
+            ml-4
+            p-2
+            cursor-pointer
+            border
+          "
+        >
+          <a
+            class="dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownFilterBar"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Tümü
+          </a>
+          <div
+            class="dropdown-menu py-0"
+            aria-labelledby="dropdownFilterBar"
+          >
+          <span class="row m-0 bar-dropdown px-2">Tümü</span>
+            <span class="row m-0 bar-dropdown px-2"
+              >Son 1 Ay</span
+            >
+            <span class="row m-0 bar-dropdown px-2">Son 3 Ay</span>
+            <span class="row m-0 bar-dropdown px-2"
+              >2020</span
+            >
           </div>
+        </div>
+          </div>
+        </div>
+        <div class="table-responsive mt-4">
+          <table class="table table-borderless">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Sipariş Tarihi<br>5 Nisan-16:02
+                </th>
+                <th scope="col">Sipariş Özeti<br>1 Teslimat , 1 Ürün
+                </th>
+                <th scope="col">Alıcı <br>Yahya Yazgan</th>
+                <th scope="col" class="font-weight-bolder">Tutar <br>60 TL</th>
+                <th scope="col"><a href="profile-order-detail.html" class="btn btn-warning text-light">Sipariş Detayı</a></th>
+              </tr>
+            </thead>
+            <tbody class="bg-light">
+              <tr>
+                <td class="table-column text-success mt-2"><i class="far fa-thumbs-up text-success float-left mr-2"></i>Siparişin onaylandı <br>  <span class="text-dark">1 ürün siparişi alındı</span> </td>
+                <td class="table-column"></td>
+                <td class="table-column"><img src="images/detail3.png" height="70px"></td>
+                <td class="table-column"></td>
+                <td class="table-column"></td>
+              </tr>
+            </tbody>
+          </table>
+        <table class="table table-borderless">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Sipariş Tarihi<br>5 Nisan-16:02
+              </th>
+              <th scope="col">Sipariş Özeti<br>1 Teslimat , 1 Ürün
+              </th>
+              <th scope="col">Alıcı <br>Yahya Yazgan</th>
+              <th scope="col" class="font-weight-bolder">Tutar <br>60 TL</th>
+              <th scope="col"><a href="profile-order-detail.html" class="btn btn-warning text-light">Sipariş Detayı</a></th>
+            </tr>
+          </thead>
+          <tbody class="bg-light">
+            <tr>
+              <td class="table-column text-success mt-2"><i class="fas fa-truck-moving mr-2"></i>Kargoya verildi <a class="text-dark cursor-pointer title-text"><ins>Kargom nerede?</ins></a><br>  <span class="text-dark">1 ürün 6 Nisan tarihinde kargoya verilmiştir.</span></td>
+              <td class="table-column"></td>
+              <td class="table-column"><img src="images/detail2.png" height="70px"></td>
+              <td class="table-column"></td>
+              <td class="table-column"><button class="btn btn-outline-warning">Kolay İade</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Sipariş Tarihi<br>5 Nisan-16:02
+              </th>
+              <th scope="col">Sipariş Özeti<br>1 Teslimat , 1 Ürün
+              </th>
+              <th scope="col">Alıcı <br>Yahya Yazgan</th>
+              <th scope="col" class="font-weight-bolder">Tutar <br>60 TL</th>
+              <th scope="col"><a href="profile-order-detail.html" class="btn btn-warning text-light">Sipariş Detayı</a></th>
+            </tr>
+          </thead>
+          <tbody class="bg-light">
+            <tr>
+              <td class="table-column text-success mt-2"><i class="fas fa-check mr-2"></i>Teslim Edildi <br>  <span class="text-dark">1 ürün 27 Mart tarihinde teslim edilmiştir.</span> </td>
+              <td class="table-column"></td>
+              <td class="table-column"><img src="images/detail1.png" height="70px"></td>
+              <td class="table-column"></td>
+              <td class="table-column"><button class="btn btn-outline-warning">Kolay İade</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Sipariş Tarihi<br>5 Nisan-16:02
+              </th>
+              <th scope="col">Sipariş Özeti<br>1 Teslimat , 1 Ürün
+              </th>
+              <th scope="col">Alıcı <br>Yahya Yazgan</th>
+              <th scope="col" class="font-weight-bolder">Tutar <br>60 TL</th>
+              <th scope="col"><a href="profile-order-detail.html" class="btn btn-warning text-light">Sipariş Detayı</a></th>
+            </tr>
+          </thead>
+          <tbody class="bg-light">
+            <tr>
+              <td class="table-column text-danger mt-2"><i class="fas fa-times mr-2"></i>İptal Edildi</td>
+              <td class="table-column"></td>
+              <td class="table-column"><img src="images/detail3.png" height="70px"></td>
+              <td class="table-column"></td>
+              <td class="table-column"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-borderless">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Sipariş Tarihi<br>5 Nisan-16:02
+              </th>
+              <th scope="col">Sipariş Özeti<br>1 Teslimat , 1 Ürün
+              </th>
+              <th scope="col">Alıcı <br>Yahya Yazgan</th>
+              <th scope="col" class="font-weight-bolder">Tutar <br>60 TL</th>
+              <th scope="col"><a href="profile-order-detail.html" class="btn btn-warning text-light">Sipariş Detayı</a></th>
+            </tr>
+          </thead>
+          <tbody class="bg-light">
+            <tr>
+              <td class="table-column text-success mt-2"><i class="fas fa-box mr-2"></i>Sipariş Hazırlanıyor <br>  <span class="text-dark">1 ürün 27 Mart tarihinde teslim edilmiştir.</span> </td>
+              <td class="table-column"></td>
+              <td class="table-column"><img src="images/detail2.png" height="70px"></td>
+              <td class="table-column"></td>
+              <td class="table-column"></td>
+            </tr>
+          </tbody>
+        </table>
+      <table class="table table-borderless">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Sipariş Tarihi<br>5 Nisan-16:02
+            </th>
+            <th scope="col">Sipariş Özeti<br>1 Teslimat , 1 Ürün
+            </th>
+            <th scope="col">Alıcı <br>Yahya Yazgan</th>
+            <th scope="col" class="font-weight-bolder">Tutar <br>60 TL</th>
+            <th scope="col"><a href="profile-order-detail.html" class="btn btn-warning text-light">Sipariş Detayı</a></th>
+          </tr>
+        </thead>
+        <tbody class="bg-light">
+          <tr>
+            <td class="table-column text-success mt-2"><i class="fas fa-map-marked-alt mr-2"></i>Teslimat Noktasına Ulaştı<br>  <span class="text-dark">1 ürün 27 Mart tarihinde teslim edilmiştir.</span></td>
+            <td class="table-column"></td>
+            <td class="table-column"><img src="images/detail1.png" height="70px"></td>
+            <td class="table-column"></td>
+            <td class="table-column"><button class="btn btn-outline-warning">Kolay İade</button></td>
+          </tr>
+        </tbody>
+      </table>
         </div>
       </div>
       <!--  content end  -->
@@ -733,185 +775,8 @@
           class="live-support-icon border rounded-circle"
         />
         <!--  live support end  -->
-        <!--Store Rating Modal-->
-        <div
-        class="modal fade"
-        id="storeRatingModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="storeRatingModal"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-body p-3 pt-2">
-              <div class="row m-0 justify-content-between border-bottom">
-                <h6 class="font-weight-bolder text-warning">Mağazayı Değerlendir</h6>
-              <div class="text-right">
-                <a
-                  type="button"
-                  class="cursor-pointer text-warning"
-                  data-dismiss="modal"
-                >
-                  X
-                </a>
-              </div>
-              </div>
-              <div class="row m-0 border-bottom">
-                <div class="rounded-circle d-inline-block mb-3 mt-2 p-2 border">
-                  <i class="fas fa-store text-secondary title-text-lg"></i>
-                </div>
-                <p class="font-weight-bolder ml-3 mt-3">Aykut Yedek Parça</p>
-              </div>
-              <div class="row border-bottom m-0 mt-3 justify-content-between">
-                <p>Paketlemeye özen gösterilmişti.</p>
-                <div>
-                  <i class="fas fa-thumbs-up text-warning title-text-lg"></i>
-                  <i class="fas fa-thumbs-down default-like ml-3 title-text-lg"></i>
-                </div>
-              </div>
-              <div class="row border-bottom m-0 mt-3 justify-content-between">
-                <p>Paketlemeye özen gösterilmişti.</p>
-                <div>
-                  <i class="fas fa-thumbs-up text-warning title-text-lg"></i>
-                  <i class="fas fa-thumbs-down default-like ml-3 title-text-lg"></i>
-                </div>
-              </div>
-              <div class="row border-bottom m-0 mt-3 justify-content-between">
-                <p>Kargo hizmetinden memnun kaldım.</p>
-                <div>
-                  <i class="fas fa-thumbs-up default-like title-text-lg"></i>
-                  <i class="fas fa-thumbs-down text-warning ml-3 title-text-lg"></i>
-                </div>
-              </div>
-              <div class="row border-bottom m-0 mt-3 justify-content-between">
-                <p>Kuryenin iletişiminden memnun kaldım.</p>
-                <div>
-                  <i class="fas fa-thumbs-up text-warning title-text-lg"></i>
-                  <i class="fas fa-thumbs-down default-like ml-3 title-text-lg"></i>
-                </div>
-              </div>
-              <div class="row m-0 text-right"><p>Yorumunuz</p></div>
-              <div class="row m-0"><textarea class="w-100 rounded bg-light" style="resize: none;" placeholder="Satıcı ile ilgili tecrübelerinizi yazınız." cols="30" rows="10"></textarea></div>
-              <div class="row justify-content-end"><p class="default-like mr-3">2000</p></div>
-              <div class="row m-1"><input type="checkbox" class="btn btn-warning mt-1"><p class="font-weight-bolder mb-2 ml-3">Yorumda adımın gözükmesine izin veriyorum.</p></div>
-              <div class="row m-0 w-100">
-                <a href="#thanksModalForProduct" class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto" data-toggle="modal" data-target="#thanksModalForProduct" data-dismiss="modal">
-                  Gönder
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <!--Store Rating Modal End-->
-        <!--Product Rating Modal-->
-        <div
-        class="modal fade"
-        id="productRatingModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="productRatingModal"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-body p-3 pt-2">
-              <div class="row m-0 justify-content-between border-bottom">
-                <h6 class="font-weight-bolder text-warning">Ürünü Değerlendir</h6>
-              <div class="text-right">
-                <a
-                  type="button"
-                  class="cursor-pointer text-warning"
-                  data-dismiss="modal"
-                >
-                  X
-                </a>
-              </div>
-              </div>
-              <div class="row m-0">
-                <div class="row border-bottom p-2 m-2 w-100">
-                  <div class="d-inline-block float-left">
-                    <img src="images/detail3.png" height="90px" width="90px" />
-                  </div>
-                  <div class="col p-0 pt-2">
-                    <h6 class="m-0">Aykut Yedek Parça</h6>
-                    <p class="m-0 title-text">Gümüş Debriyaj</p>
-                    <p class="m-0">
-                      <del class="text-right text-muted">100.00 TL</del>
-                      <span class="text-left text-warning">50.00 TL</span>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-12 m-0 mt-2">
-                  <div class="row m-0">
-                    <p class="text-warning font-weight-bolder">Ürünü Puanlayın</p>
-                    <i class="fas fa-star ml-4 default-like cursor-pointer"></i>
-                    <i class="fas fa-star default-like cursor-pointer"></i>
-                    <i class="fas fa-star default-like cursor-pointer"></i>
-                    <i class="fas fa-star default-like cursor-pointer"></i>
-                    <i class="fas fa-star default-like cursor-pointer"></i>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <p class="h5 mb-2">Yorumunuz</p>
-                  <div class="row m-0"><textarea class="w-100 rounded bg-light border p-3" style="resize: none;" placeholder="Ürünü çok beğendim." cols="30" rows="4"></textarea></div>
-                </div>
-                <div class="col-12">
-                  <div class="row m-1"><input type="checkbox" class="btn btn-warning mt-2"><p class="font-weight-bolder mb-2 ml-2 mt-1 title-text-md checkbox-text">Yorumda adımın gözükmesine izin veriyorum.</p></div>
-                  <div class="row m-1"><input type="checkbox" class="btn btn-warning mt-2"><p class="font-weight-bolder mb-2 ml-2 mt-1 title-text-md checkbox-text">Yorumda eklemek için Kullanıcı Sözleşmesini kabul ediyorum.</p></div>
-                </div>
-                <div class="row m-0 w-100">
-                  <a href="#thanksModalForProduct" class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto" data-toggle="modal" data-target="#thanksModalForProduct" data-dismiss="modal">
-                    Gönder
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      </div>
-        <!--Product Rating Modal End-->
-        <!--Thanks Modal For Product-->
-        <div
-        class="modal fade"
-        id="thanksModalForProduct"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="thanksModalForProduct"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-body p-3 pt-2">
-              <div class="row m-0 justify-content-end">
-              <div class="text-right">
-                <a
-                  type="button"
-                  class="cursor-pointer text-warning"
-                  data-dismiss="modal"
-                >
-                  X
-                </a>
-              </div>
-              </div>
-              <div class="row m-0 border-bottom">
-                <div class="row m-0 w-100 justify-content-center">
-                  <i class="fas fa-check-circle text-success title-text-xl"></i>
-                </div>
-                <p class="font-weight-bolder ml-5 px-5 mt-3 mb-3 text-success h6">Değerlendirmeniz için teşekkür ederiz</p>
-              </div>
-              <div class="row m-0 w-100">
-                <button class="btn btn-warning mt-3 font-weight-bolder text-light rounded-lg mx-auto" data-dismiss="modal">
-                  Tamam
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <!--Thanks Modal For Product End-->
-        <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -949,15 +814,6 @@
       function w3_close() {
         document.getElementById("mySidebar").style.width = "0px";
         document.getElementById("openNav").style.display = "inline-block";
-      }
-      var x=0;
-      function sendBillAlertify(){
-        x++;
-        alertify.set('notifier','position', 'bottom-right');
-        if(x%2)
-          alertify.success(`<i class="fas fa-thumbs-up text-light h5 m-0 mr-3"></i>`+'Faturanız kayıtlı email adresinize gönderildi.' );
-          else
-          alertify.error(`<i class="fas fa-times text-light h5 m-0 mr-3"></i>`+'Faturanız gönderilemedi , lütfen daha sonra tekrar deneyiniz.');
       }
     </script>
   </body>
