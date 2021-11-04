@@ -36,7 +36,7 @@
 }
 .banner-logo-img {
   max-width: 45px;
-  height: 50px;
+  height: 70px;
 }
 .banner-logo1 {
   background-image: url(../images/audi.png);
@@ -777,6 +777,14 @@
 @media screen and (max-width: 768px) {
   .search-close {
     left: calc(100vw - 28px) !important;
+  }
+  .banner-logo-img {
+    height: 55px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner-logo-img {
+    height: 45px;
   }
 }
 .search-input {
