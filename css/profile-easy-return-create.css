@@ -1107,6 +1107,9 @@ a:hover {
   overflow: auto;
   overflow-y: auto;
 }
+.btn-outline-warning:hover {
+  color: white !important;
+}
 .basket-modal-icon::after {
   content: "\25B2";
   color: white;
