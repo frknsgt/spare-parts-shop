@@ -1082,6 +1082,7 @@ a:hover {
   font-size: 20px;
   position: absolute;
   margin-left: 155px;
+  color: #373737;
 }
 @media screen and (max-width: 530px) {
   .cards {
@@ -1106,7 +1107,7 @@ a:hover {
   }
 }
 .like:hover {
-  color: red;
+  color: #feb737;
 }
 .card-institution {
   font-size: 11px;
