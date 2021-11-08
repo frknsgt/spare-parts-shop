@@ -1368,7 +1368,7 @@
   position: absolute;
 }
 .search-close {
-  left: calc(100vw - 70px);
+  left: calc(100vw - 85px);
   font-size: 20px;
   top: 28px;
   /* color: black; */
@@ -1647,4 +1647,8 @@ a:hover {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   cursor: pointer;
+}
+
+.btn-warn {
+  background-color: #feb737 !important;
 }
