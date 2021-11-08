@@ -566,13 +566,22 @@
               ></span>
             </span>
             <span>
-              <a class="px-2 py-1 text-light btn btn-warning message-font mr-2"
+              <a
+                class="px-2 py-1 text-light btn btn-warning message-font mr-2"
+                data-target="#complainModal"
+                data-toggle="modal"
                 ><i class="fas fa-exclamation-triangle mr-1"></i>Şikayet Et</a
               >
-              <a class="px-2 py-1 text-light btn btn-dark message-font mr-2"
+              <a
+                class="px-2 py-1 text-light btn btn-dark message-font mr-2"
+                data-toggle="modal"
+                data-target="#blockModal"
                 ><i class="fas fa-times mr-1"></i>Engelle</a
               >
-              <a class="px-2 py-1 btn btn-outline-dark message-font mr-2"
+              <a
+                class="px-2 py-1 btn btn-outline-dark message-font mr-2"
+                data-toggle="modal"
+                data-target="#messageDeleteModal"
                 ><i class="fas fa-trash-alt mr-1"></i
               ></a>
             </span>
@@ -876,6 +885,345 @@
       class="live-support-icon border rounded-circle"
     />
     <!--  live support end  -->
+
+    <!--Complain Modal-->
+    <div
+      class="modal"
+      id="complainModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="complainModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 mb-3 justify-content-center">
+              <h6 class="mb-3">Şikayet etme nedeninizi seçin</h6>
+            </div>
+            <div class="container">
+              <div class="row m-0">
+                <input type="radio" class="btn btn-warning mt-1" />
+                <p class="ml-2">Reklam yapıyor.</p>
+              </div>
+              <div class="row m-0">
+                <input type="radio" class="btn btn-warning mt-1" />
+                <p class="ml-2">Gereksiz/ilgisiz mesaj atıyor.</p>
+              </div>
+              <div class="row m-0">
+                <input type="radio" class="btn btn-warning mt-1" />
+                <p class="ml-2">Hakaret içerikli mesaj atıyor.</p>
+              </div>
+              <div class="row m-0">
+                <input type="radio" class="btn btn-warning mt-1" />
+                <p class="ml-2">Şüphelendim, kötü niyetli olabilir.</p>
+              </div>
+              <div class="row m-0">
+                <div class="col-6">
+                  <button
+                    class="
+                      btn btn-outline-warning
+                      text-warning
+                      rounded
+                      w-75
+                      mb-3
+                    "
+                  >
+                    Vazgeç
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    class="btn btn-warning text-light rounded w-75 mb-3"
+                    data-toggle="modal"
+                    data-target="#complainAcceptedModal"
+                  >
+                    Şikayet Et
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Complain Modal End-->
+
+    <!--Complain Accepted Modal-->
+    <div
+      class="modal"
+      id="complainAcceptedModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="complainAcceptedModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 mb-3 justify-content-center">
+              <h6 class="mb-3">Şikayet etme nedeninizi seçin</h6>
+            </div>
+            <div class="container">
+              <div class="row m-0">
+                <p class="h5">
+                  Şikayet başurvu aldık. <br />
+                  Kullanıcının size atmasını <br />
+                  istemiyorsanız engelleyebilirsiniz.
+                </p>
+              </div>
+              <div class="row m-0">
+                <div class="col-6">
+                  <button
+                    class="
+                      btn btn-outline-warning
+                      text-warning
+                      rounded
+                      w-75
+                      mb-3
+                    "
+                  >
+                    Vazgeç
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-warning text-light rounded w-75 mb-3">
+                    Şikayet Et
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Complain Accepted Modal End-->
+
+    <!--Block Modal-->
+    <div
+      class="modal"
+      id="blockModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="blockModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 mb-3 justify-content-center">
+              <h6 class="mb-3">"Öner Erkan"ı engellemek ister misiniz?</h6>
+            </div>
+            <div class="container">
+              <div class="row m-0">
+                <div class="col-6">
+                  <button
+                    class="
+                      btn btn-outline-warning
+                      text-warning
+                      rounded
+                      w-75
+                      mb-3
+                    "
+                  >
+                    Vazgeç
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    class="btn btn-warning text-light rounded w-75 mb-3"
+                    data-target="#blockAcceptedModal"
+                    data-toggle="modal"
+                  >
+                    Engelle
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Block Modal End-->
+
+    <!--Block Accepted Modal-->
+    <div
+      class="modal"
+      id="blockAcceptedModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="blockAcceptedModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 px-3 mb-3 justify-content-center">
+              <i class="fas fa-exclamation-triangle fa-3x"></i>
+
+              <h6 class="mb-3 w-100 border-bottom pb-3">
+                "Öner Erkan"ı engellemek ister misiniz?
+              </h6>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-warning text-light rounded w-75 mb-3">
+                Tamam
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Block Accepted Modal End-->
+
+    <!--Message Delete Modal-->
+    <div
+      class="modal"
+      id="messageDeleteModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="messageDeleteModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 px-3 mb-3 justify-content-center">
+              <i class="fas fa-exclamation-triangle fa-3x"></i>
+
+              <h6 class="mb-3 w-100 pb-3">
+                Bu mesajlaşmadaki tüm mesajlar silinecektir. <br />Onaylıyor
+                musunuz?
+              </h6>
+            </div>
+            <div class="container">
+              <div class="row m-0">
+                <div class="col-6">
+                  <button
+                    class="btn btn-outline-warning text-warning w-75 mb-3"
+                  >
+                    Hayır
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    class="btn btn-warning text-light rounded w-75 mb-3"
+                    data-target="#messageDeleteAcceptedModal"
+                    data-toggle="modal"
+                  >
+                    Evet
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Message Delete Modal End-->
+
+    <!--Message Delete Accepted Modal-->
+    <div
+      class="modal"
+      id="messageDeleteAcceptedModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="messageDeleteAcceptedModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 px-3 mb-3 justify-content-center">
+              <i class="fas fa-check-circle text-success fa-3x"></i>
+
+              <h6 class="mb-3 w-100 text-success border-bottom pb-3">
+                Mesajınız silinmiştir.
+              </h6>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-warning text-light rounded w-75 mb-3">
+                Tamam
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Message Delete Accepted Modal End-->
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
