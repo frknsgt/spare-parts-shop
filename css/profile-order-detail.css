@@ -1190,7 +1190,7 @@ a:hover {
 .basket-modal {
   position: absolute !important;
   top: 55px !important;
-  right: 80px !important;
+  right: 120px !important;
   z-index: 10040;
   overflow: auto;
   overflow-y: auto;
@@ -1199,16 +1199,16 @@ a:hover {
   content: "\25B2";
   color: white;
   position: absolute;
-  right: 115px;
+  right: 160px;
   top: 66px;
 }
 @media screen and (max-width: 575px) {
   .basket-modal {
     top: 73px !important;
-    right: 52px !important;
+    right: 20px !important;
   }
   .basket-modal-icon::after {
-    right: 87px;
+    right: 120px;
   }
 }
 .user-name {
