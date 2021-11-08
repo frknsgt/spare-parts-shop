@@ -223,24 +223,104 @@
           <div class="car-menu car-menu-content p-3">
             <div class="row m-0">
               <div class="col-sm-3 col-6">
-                <a class="cursor-pointer text-light"><p>Alfa Romeo</p></a>
-                <a class="cursor-pointer text-light"><p>Aston Martin</p></a>
-                <a class="cursor-pointer text-light"><p>Audi</p></a>
-                <a class="cursor-pointer text-light"><p>Bentley</p></a>
-                <a class="cursor-pointer text-light"><p>BMW</p></a>
-                <a class="cursor-pointer text-light"><p>Bugatti</p></a>
-                <a class="cursor-pointer text-light"><p>Buick</p></a>
-                <a class="cursor-pointer text-light"><p>Cadillac</p></a>
-                <a class="cursor-pointer text-light"><p>Mercedes Benz</p></a>
-                <a class="cursor-pointer text-light"><p>BMW</p></a>
-                <a class="cursor-pointer text-light"><p>Volkswagen</p></a>
-                <a class="cursor-pointer text-light"><p>Opel</p></a>
-                <a class="cursor-pointer text-light"><p>Renault</p></a>
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Alfa Romeo</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Aston Martin</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Audi</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Bentley</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>BMW</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Bugatti</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Buick</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Cadillac</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Mercedes Benz</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>BMW</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Volkswagen</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Opel</p></a
+                >
+                <a
+                  class="cursor-pointer text-light"
+                  href="#carMenuContent"
+                  data-toggle="collapse"
+                  data-target="#carMenuContent"
+                  ><p>Renault</p></a
+                >
               </div>
               <div class="col-sm-3 col-6 mb-3">
-                <a class="cursor-pointer text-light"><p>Ateşleme</p></a>
-                <a class="cursor-pointer text-light"><p>Egzoz</p></a>
-                <a class="cursor-pointer text-light"><p>Filtre</p></a>
+                <div class="collapse" id="carMenuContent">
+                  <a class="cursor-pointer text-light"><p>Ateşleme</p></a>
+                  <a class="cursor-pointer text-light"><p>Egzoz</p></a>
+                  <a class="cursor-pointer text-light"><p>Filtre</p></a>
+                </div>
               </div>
               <div class="col-sm-6 col-12">
                 <img src="images/sidebar1.png" class="w-100" />
@@ -1369,16 +1449,21 @@
               </button>
             </div>
             <i class="fas fa-check-circle text-success modal-correct"></i>
-            <h6>
+            <h6 class="border-bottom pb-3">
               Otomobil parça isteği başvurunuz başarıyla alınmıştır. Üye
-              işyerlerimiz size en kısa zamanda dönüş yapabilmesi için ücretsiz
-              üyelik işlemleri gerçekleştiriniz. Bu sayede özel mesaj yoluyla
-              kendileriyle pazarlık yapabilir , ürün hakkında detaylı bilgi
-              alabilirsiniz.
+              işyerlerimiz size en kısa zamanda dönüş yapabilmesi için
+              <ins>ücretsiz üyelik işlemleri gerçekleştiriniz</ins>. Bu sayede
+              özel mesaj yoluyla kendileriyle pazarlık yapabilir , ürün hakkında
+              detaylı bilgi alabilirsiniz.
             </h6>
-            <button class="btn btn-warning mt-3 text-light">
-              Anasayfaya Dön
-            </button>
+            <div class="row m-0 justify-content-around">
+              <a href="login.html" class="btn btn-outline-warning">
+                Giriş Yap
+              </a>
+              <a href="register.html" class="btn btn-outline-warning">
+                Üye ol
+              </a>
+            </div>
           </div>
         </div>
       </div>
