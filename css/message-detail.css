@@ -1039,7 +1039,8 @@ a:hover {
 @media screen and (min-width: 768px) {
   .sidebar-box {
     width: 250px !important;
-    height: 790px;
+    height: calc(100vh - 120px);
+    min-height: 780px;
   }
 }
 /* cards */
@@ -1275,7 +1276,6 @@ a:hover {
 .user-text {
   font-weight: 900;
   color: black;
-  text-shadow: 0px 1px 0px black;
   font-size: 12px;
 }
 body {
@@ -1289,7 +1289,8 @@ body {
   -o-border-radius: 15px 15px 0 0 !important;
 }
 .message-content {
-  height: 500px;
+  height: calc(100vh - 400px);
+  min-height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -1335,6 +1336,9 @@ body {
 .message-mw {
   width: calc(100% - 75px);
 }
+.product-file {
+  background-color: white;
+}
 .product-message::after {
   content: "\25B2";
   color: #ffc107;
@@ -1371,4 +1375,11 @@ body {
   height: 36px;
   overflow: hidden;
   font-size: 10px;
+}
+.see-message {
+  font-size: 10px;
+  color: #505050;
+}
+.see-message-two {
+  margin-left: -6px;
 }
