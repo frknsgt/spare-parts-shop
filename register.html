@@ -191,7 +191,13 @@
         <input type="password" class="px-3 py-2 w-100 border" />
         <p class="mt-3 mb-2">Şifre tekrar</p>
         <input type="password" class="px-3 py-2 w-100 border" />
-        <button class="btn btn-warning text-light mt-4 w-100">KAYIT OL</button>
+        <button
+          class="btn btn-warning text-light mt-4 w-100"
+          data-target="#registerAcceptedModal"
+          data-toggle="modal"
+        >
+          KAYIT OL
+        </button>
       </div>
     </div>
 
@@ -399,6 +405,48 @@
       class="live-support-icon border rounded-circle"
     />
     <!--  live support end  -->
+
+    <!--Register Accepted Modal-->
+    <div
+      class="modal"
+      id="registerAcceptedModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="registerAcceptedModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <div class="row m-0 justify-content-end">
+              <button
+                type="button"
+                class="btn text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </button>
+            </div>
+            <div class="row m-0 px-3 mb-3 justify-content-center">
+              <i class="fas fa-check-circle text-success fa-3x"></i>
+
+              <h6 class="mb-3 w-100 border-bottom pb-3">
+                Kayıt işleminiz başarıyla gerçekleşti.
+              </h6>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-warning text-light rounded w-75 mb-3">
+                Tamam
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Register Accepted Modal End-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
