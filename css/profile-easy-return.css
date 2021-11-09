@@ -1331,3 +1331,10 @@ a:hover {
 .product-box {
   max-width: 405px;
 }
+.select-dropdown-menu {
+  transform: translate3d(45px, 33px, 0px) !important;
+  -webkit-transform: translate3d(45px, 33px, 0px) !important;
+  -moz-transform: translate3d(45px, 33px, 0px) !important;
+  -ms-transform: translate3d(45px, 33px, 0px) !important;
+  -o-transform: translate3d(45px, 33px, 0px) !important;
+}

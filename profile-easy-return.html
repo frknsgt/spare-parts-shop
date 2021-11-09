@@ -329,7 +329,7 @@
                 <a class="text-muted cursor-pointer"> < Tüm Siparişlerime Dön</p>
             </div>
             <div class="col-4">
-                <a class="text-muted cursor-pointer"><i class="fas fa-trash-alt mr-2"></i>Siparişini Sil</a>
+                <a href="#deleteOrder" data-toggle="modal" data-target="#deleteOrder" class="text-muted cursor-pointer"><i class="fas fa-trash-alt mr-2"></i>Siparişini Sil</a>
             </div>
             <div class="col-4">
                 <a class="text-muted cursor-pointer">Mesafeli Satış Sözleşmesi Ön Bilgilendirme Formu</a>
@@ -369,48 +369,48 @@
             <div class="col-12 col-md-6 pt-5">        
                   <div class="row m-0 my-auto aling-items-center">
                     <p class="font-weight-bolder mt-2 px-2 float-left">İade Nedeni</p>
-                  <div
+                  <a
                         class="
                           dropdown
+                          dropdown-toggle
                           bar-dropdown
                           float-left
                           py-2
-                          px-5
+                          px-3
                           cursor-pointer
                           float-left
+                          bg-light
                         "
-                      >
-                        <a
-                          class="dropdown-toggle"
-                          href="#"
+                        href="#"
                           role="button"
                           id="dropdownFilterBar"
                           data-toggle="dropdown"
                           aria-haspopup="true"
                           aria-expanded="false"
-                        >
+                        style="width:300px"
+                      >
                           Seçiniz
-                        </a>
+
                         <div
-                          class="dropdown-menu py-0"
+                          class="dropdown-menu bg-light py-0 select-dropdown-menu"
                           aria-labelledby="dropdownFilterBar"
                         >
-                          <span class="row m-0 bar-dropdown px-3"
+                          <span class="row m-0 bar-dropdown px-3 bg-light"
                             >Vazgeçtim</span
                           >
-                          <span class="row m-0 bar-dropdown px-3">Modelini Beğenmedim</span>
-                          <span class="row m-0 bar-dropdown px-3"
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Modelini Beğenmedim</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light"
                             >Kalitesini Beğenmedim</span
                           >
-                          <span class="row m-0 bar-dropdown px-3">Uygun Model Değildi</span>
-                          <span class="row m-0 bar-dropdown px-3">Yanlış Sİpariş Verdim</span>
-                          <span class="row m-0 bar-dropdown px-3">Teslimat Tarihi Geçikti</span>
-                          <span class="row m-0 bar-dropdown px-3">Kusurlu Ürün Gönderildi</span>
-                          <span class="row m-0 bar-dropdown px-3">Yanlış Ürün Gönderildi</span>
-                          <span class="row m-0 bar-dropdown px-3">Ürün Belirtilen Özelliklere Sahip Değil</span>
-                          <span class="row m-0 bar-dropdown px-3">Diğer</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Uygun Model Değildi</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Yanlış Sİpariş Verdim</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Teslimat Tarihi Geçikti</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Kusurlu Ürün Gönderildi</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Yanlış Ürün Gönderildi</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Ürün Belirtilen Özelliklere Sahip Değil</span>
+                          <span class="row m-0 bar-dropdown px-3 bg-light">Diğer</span>
                         </div>
-                  </div>
+                  </a>
                   </div>
           </div>
           </div>
@@ -695,6 +695,109 @@
           class="live-support-icon border rounded-circle"
         />
         <!--  live support end  -->
+            <!--delete order-->
+    <div
+    class="modal fade"
+    id="deleteOrder"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="deleteOrder"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body p-3 pt-2">
+          <p class="font-weight-bolder ml-5 px-5 mt-3 mb-3 h6 text-center">
+            Bu siparişi silmek istediğinizden emin misiniz? Bu işlem geri
+            alınmaz!
+          </p>
+          <div class="row m-0 w-100 justify-content-around">
+            <a
+              class="
+                btn btn-outline-warning
+                text-warning
+                mt-3
+                font-weight-bolder
+                rounded-lg
+                px-3
+                mr-2
+                delete-message-btn
+              "
+              data-dismiss="modal"
+            >
+              Vazgeç
+            </a>
+            <a
+              class="
+                btn btn-warning
+                mt-3
+                font-weight-bolder
+                text-light
+                rounded-lg
+                px-4
+                delete-message-btn
+              "
+              href="#deleteOrderComplate"
+              data-toggle="modal"
+              data-target="#deleteOrderComplate"
+              data-dismiss="modal"
+            >
+              Sil
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--delete order end-->
+
+  <!--delete order complate-->
+  <div
+    class="modal fade"
+    id="deleteOrderComplate"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="deleteOrderComplate"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body p-3 pt-2">
+          <div class="row m-0 justify-content-end">
+            <div class="text-right">
+              <a
+                type="button"
+                class="cursor-pointer text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </a>
+            </div>
+          </div>
+          <div class="row m-0 border-bottom">
+            <div class="row m-0 w-100 justify-content-center">
+              <i class="fas fa-check-circle text-success h1"></i>
+            </div>
+            <p
+              class="
+                font-weight-bolder
+                px-5
+                mt-3
+                mb-3
+                text-success
+                h4
+                text-center
+                w-100
+              "
+            >
+              Siparişiniz silindi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--delete order complate end-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -379,7 +379,11 @@
           -E-posta adresinizin yeni bir üyelikte kullanılamayacağını da üzülerek
           hatırlatmak isteriz.
         </p>
-        <button class="btn btn-warning font-weight-bolder p-2 text-light">
+        <button
+          data-toggle="modal"
+          data-target="#deleteAccount"
+          class="btn btn-warning font-weight-bolder p-2 text-light"
+        >
           Üyeliğimi İptal Etmek İstiyorum
         </button>
       </div>
@@ -590,6 +594,98 @@
       class="live-support-icon border rounded-circle"
     />
     <!--  live support end  -->
+    <!--delete order-->
+    <div
+      class="modal fade"
+      id="deleteAccount"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="deleteAccount"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body p-3 pt-2">
+            <p class="font-weight-bolder ml-5 px-5 mt-3 mb-3 h6 text-center">
+              Üyeliğinizi iptal etmek istediğinizden emin misiniz? Bu işlem geri
+              alınmaz!
+            </p>
+            <div class="row m-0 w-100 justify-content-around">
+              <a
+                class="
+                  btn btn-outline-warning
+                  text-warning
+                  mt-3
+                  font-weight-bolder
+                  rounded-lg
+                  px-3
+                  mr-2
+                  delete-message-btn
+                "
+                data-dismiss="modal"
+              >
+                Vazgeç
+              </a>
+              <a
+                class="
+                  btn btn-warning
+                  mt-3
+                  font-weight-bolder
+                  text-light
+                  rounded-lg
+                  px-4
+                  delete-message-btn
+                "
+                href="#deleteAccountComplate"
+                data-toggle="modal"
+                data-target="#deleteAccountComplate"
+                data-dismiss="modal"
+              >
+                Sil
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--delete order end-->
+
+    <!--delete order complate-->
+    <div
+      class="modal fade"
+      id="deleteAccountComplate"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="deleteAccountComplate"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body p-3 pt-2">
+            <div class="row m-0 justify-content-end">
+              <div class="text-right">
+                <a
+                  type="button"
+                  class="cursor-pointer text-warning"
+                  data-dismiss="modal"
+                >
+                  X
+                </a>
+              </div>
+            </div>
+            <div class="row m-0 border-bottom">
+              <div class="row m-0 w-100 justify-content-center">
+                <i class="far fa-frown fa-4x"></i>
+              </div>
+              <p class="font-weight-bolder px-5 mt-3 mb-3 h2 text-center w-100">
+                Üyeliğiniz iptal edildi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--delete order complate end-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

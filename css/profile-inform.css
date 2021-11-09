@@ -1228,3 +1228,6 @@ a:hover {
 .inform-title {
   max-width: 80%;
 }
+.select-inform:focus {
+  color: orange !important;
+}

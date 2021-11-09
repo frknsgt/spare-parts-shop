@@ -374,7 +374,11 @@
         <span class="float-left contact-text pt-1"
           >İlgimi çekebilecek kampanyalarla ilgili çağrı almak istiyorum.</span
         ><br />
-        <button class="btn btn-warning text-light mt-4 font-weight-bolder">
+        <button
+          data-toggle="modal"
+          data-target="#updateContact"
+          class="btn btn-warning text-light mt-4 font-weight-bolder"
+        >
           Güncelle
         </button>
       </div>
@@ -585,6 +589,61 @@
       class="live-support-icon border rounded-circle"
     />
     <!--  live support end  -->
+    <!--delete order complate-->
+    <div
+      class="modal fade"
+      id="updateContact"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="updateContact"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body p-3 pt-2">
+            <div class="row m-0 justify-content-end">
+              <div class="text-right">
+                <a
+                  type="button"
+                  class="cursor-pointer text-warning"
+                  data-dismiss="modal"
+                >
+                  X
+                </a>
+              </div>
+            </div>
+            <div class="row m-0 border-bottom">
+              <div class="row m-0 w-100 justify-content-center">
+                <i class="fas fa-check-circle text-success h1"></i>
+              </div>
+              <p
+                class="
+                  font-weight-bolder
+                  px-5
+                  mt-3
+                  mb-3
+                  text-success
+                  h6
+                  text-center
+                  w-100
+                "
+              >
+                İletişim tercihleriniz başarıyla güncellenmiştir.
+              </p>
+            </div>
+            <div class="row m-0 justify-content-center">
+              <button
+                data-dismiss="modal"
+                class="btn btn-warning text-light mt-3"
+              >
+                Tamam
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--delete order complate end-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

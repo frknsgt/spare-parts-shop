@@ -330,7 +330,7 @@
                 <a href="profile-my-orders.html" class="text-muted cursor-pointer"> < Tüm Siparişlerime Dön</p>
             </div>
             <div class="col-4">
-                <a class="text-muted cursor-pointer"><i class="fas fa-trash-alt mr-2"></i>Siparişini Sil</a>
+                <a href="#deleteOrder" data-toggle="modal" data-target="#deleteOrder" class="text-muted cursor-pointer"><i class="fas fa-trash-alt mr-2"></i>Siparişini Sil</a>
             </div>
             <div class="col-4">
                 <a class="text-muted cursor-pointer">Mesafeli Satış Sözleşmesi Ön Bilgilendirme Formu</a>
@@ -398,7 +398,7 @@
               </div>
               <div class="float-left mr-2">
                 <p class="ml-5 font-weight-bolder h6">Satıcı</p>
-                <p  class="ml-5 float-left">Aykut Yedek Parça</p> <button class="btn btn-outline-warning rounded ml-2 btn-hgt text-warning float-left">Takip Et</button>
+                <p  class="ml-5 float-left">Aykut Yedek Parça</p> <a href="message-detail.html" class="btn btn-outline-warning rounded ml-2 btn-hgt text-warning float-left">Mesaj gönder</a>
               </div>
             </div>
             <div class="row m-0 pr-3">
@@ -433,9 +433,9 @@
           </div>
           <div>
             <h5 class="font-weight-bolder pl-3">Aşağıdaki 1 ürün teslim edilmiştir.</h5>
-            <p class="pl-3">Tahmini Teslim Tarihi :5-8 Nisan</p>
+            <p class="pl-3">Teslim Tarihi :5-8 Nisan</p>
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-xl-5 col-lg-8">
             <div class="row border p-2 m-2">
               <div class="d-inline-block float-left p-3">
                 <img src="images/detail3.png" height="90px" width="90px" />
@@ -444,15 +444,14 @@
                 <h6 class="m-0">Aykut Yedek Parça</h6>
                 <p class="m-0">Gümüş Debriyaj</p>
                 <p class="text-muted m-0">
-                  Beden: Tek Ebat -
-                  <span class="text-danger"> Son 1 Ürün</span>
+                  Beden: Tek Ebat
                 </p>
                 <p class="m-0">
                   <del class="text-right text-muted">100.00 TL</del>
                   <span class="text-left text-warning">50.00 TL</span>
                 </p>
               </div>
-              <div class="row m-0 justify-content-between w-100">
+              <div class="row m-0 justify-content-around w-100">
                 <button class="btn btn-warning text-light mb-3" data-target="#productRatingModal" data-toggle="modal" data-dismiss="modal">Ürünü Değerlendir</button>
                   <button class="btn btn-outline-warning mb-3" data-target="#storeRatingModal" data-toggle="modal" data-dismiss="modal">Mağazayı Değerlendir</button>
               </div>
@@ -796,7 +795,7 @@
                 </div>
               </div>
               <div class="row m-0 text-right"><p>Yorumunuz</p></div>
-              <div class="row m-0"><textarea class="w-100 rounded bg-light" style="resize: none;" placeholder="Satıcı ile ilgili tecrübelerinizi yazınız." cols="30" rows="10"></textarea></div>
+              <div class="row m-0"><textarea class="w-100 rounded border bg-light p-3" style="resize: none;" placeholder="Satıcı ile ilgili tecrübelerinizi yazınız." cols="30" rows="10"></textarea></div>
               <div class="row justify-content-end"><p class="default-like mr-3">2000</p></div>
               <div class="row m-1"><input type="checkbox" class="btn btn-warning mt-1"><p class="font-weight-bolder mb-2 ml-3">Yorumda adımın gözükmesine izin veriyorum.</p></div>
               <div class="row m-0 w-100">
@@ -876,6 +875,109 @@
       </div>
       </div>
         <!--Product Rating Modal End-->
+                    <!--delete order-->
+    <div
+    class="modal fade"
+    id="deleteOrder"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="deleteOrder"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body p-3 pt-2">
+          <p class="font-weight-bolder ml-5 px-5 mt-3 mb-3 h6 text-center">
+            Bu siparişi silmek istediğinizden emin misiniz? Bu işlem geri
+            alınmaz!
+          </p>
+          <div class="row m-0 w-100 justify-content-around">
+            <a
+              class="
+                btn btn-outline-warning
+                text-warning
+                mt-3
+                font-weight-bolder
+                rounded-lg
+                px-3
+                mr-2
+                delete-message-btn
+              "
+              data-dismiss="modal"
+            >
+              Vazgeç
+            </a>
+            <a
+              class="
+                btn btn-warning
+                mt-3
+                font-weight-bolder
+                text-light
+                rounded-lg
+                px-4
+                delete-message-btn
+              "
+              href="#deleteOrderComplate"
+              data-toggle="modal"
+              data-target="#deleteOrderComplate"
+              data-dismiss="modal"
+            >
+              Sil
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--delete order end-->
+
+  <!--delete order complate-->
+  <div
+    class="modal fade"
+    id="deleteOrderComplate"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="deleteOrderComplate"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body p-3 pt-2">
+          <div class="row m-0 justify-content-end">
+            <div class="text-right">
+              <a
+                type="button"
+                class="cursor-pointer text-warning"
+                data-dismiss="modal"
+              >
+                X
+              </a>
+            </div>
+          </div>
+          <div class="row m-0 border-bottom">
+            <div class="row m-0 w-100 justify-content-center">
+              <i class="fas fa-check-circle text-success h1"></i>
+            </div>
+            <p
+              class="
+                font-weight-bolder
+                px-5
+                mt-3
+                mb-3
+                text-success
+                h4
+                text-center
+                w-100
+              "
+            >
+              Siparişiniz silindi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--delete order complate end-->
         <!--Thanks Modal For Product-->
         <div
         class="modal fade"

@@ -1347,3 +1347,6 @@ a:hover {
 .see-product-btn {
   height: 35px;
 }
+.gift-text {
+  max-width: 1000px;
+}
