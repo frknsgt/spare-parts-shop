@@ -1273,3 +1273,7 @@ a:hover {
   -o-transform: rotate(45deg);
   cursor: pointer;
 }
+.phone-input {
+  width: calc(100% - 73px);
+  min-width: 160px;
+}

@@ -181,7 +181,7 @@
         >
         <input
           type="text"
-          class="search-input"
+          class="search-input border"
           placeholder="Site içi ürün arama"
           onkeydown="search(this)"
         />
@@ -1013,6 +1013,7 @@
                       w-75
                       mb-3
                     "
+                    data-dismiss="modal"
                   >
                     Vazgeç
                   </button>
@@ -1022,6 +1023,7 @@
                     class="btn btn-warning text-light rounded w-75 mb-3"
                     data-toggle="modal"
                     data-target="#complainAcceptedModal"
+                    data-dismiss="modal"
                   >
                     Şikayet Et
                   </button>
@@ -1058,36 +1060,29 @@
                 X
               </button>
             </div>
-            <div class="row m-0 mb-3 justify-content-center">
-              <h6 class="mb-3">Şikayet etme nedeninizi seçin</h6>
-            </div>
-            <div class="container">
-              <div class="row m-0">
-                <p class="h5">
-                  Şikayet başurvu aldık. <br />
-                  Kullanıcının size atmasını <br />
-                  istemiyorsanız engelleyebilirsiniz.
-                </p>
+            <div class="row m-0 mb-3 justify-content-center"></div>
+
+            <p class="h5">
+              Şikayet başvurunuzu aldık. <br />
+              Kullanıcının size mesaj atmasını <br />
+              istemiyorsanız engelleyebilirsiniz.
+            </p>
+            <div class="row m-0">
+              <div class="col-6">
+                <button
+                  class="btn btn-outline-warning text-warning rounded w-75 mb-3"
+                  data-dismiss="modal"
+                >
+                  Vazgeç
+                </button>
               </div>
-              <div class="row m-0">
-                <div class="col-6">
-                  <button
-                    class="
-                      btn btn-outline-warning
-                      text-warning
-                      rounded
-                      w-75
-                      mb-3
-                    "
-                  >
-                    Vazgeç
-                  </button>
-                </div>
-                <div class="col-6">
-                  <button class="btn btn-warning text-light rounded w-75 mb-3">
-                    Şikayet Et
-                  </button>
-                </div>
+              <div class="col-6">
+                <button
+                  class="btn btn-warning text-light rounded w-75 mb-3"
+                  data-dismiss="modal"
+                >
+                  Engelle
+                </button>
               </div>
             </div>
           </div>
@@ -1134,6 +1129,7 @@
                       w-75
                       mb-3
                     "
+                    data-dismiss="modal"
                   >
                     Vazgeç
                   </button>
@@ -1143,6 +1139,7 @@
                     class="btn btn-warning text-light rounded w-75 mb-3"
                     data-target="#blockAcceptedModal"
                     data-toggle="modal"
+                    data-dismiss="modal"
                   >
                     Engelle
                   </button>
@@ -1183,11 +1180,14 @@
               <i class="fas fa-exclamation-triangle fa-3x"></i>
 
               <h6 class="mb-3 w-100 border-bottom pb-3">
-                "Öner Erkan"ı engellemek ister misiniz?
+                Öner Erkan engellenmiştir.
               </h6>
             </div>
             <div class="col-12">
-              <button class="btn btn-warning text-light rounded w-75 mb-3">
+              <button
+                class="btn btn-warning text-light rounded w-75 mb-3"
+                data-dismiss="modal"
+              >
                 Tamam
               </button>
             </div>
@@ -1222,8 +1222,6 @@
               </button>
             </div>
             <div class="row m-0 px-3 mb-3 justify-content-center">
-              <i class="fas fa-exclamation-triangle fa-3x"></i>
-
               <h6 class="mb-3 w-100 pb-3">
                 Bu mesajlaşmadaki tüm mesajlar silinecektir. <br />Onaylıyor
                 musunuz?
@@ -1234,6 +1232,7 @@
                 <div class="col-6">
                   <button
                     class="btn btn-outline-warning text-warning w-75 mb-3"
+                    data-dismiss="modal"
                   >
                     Hayır
                   </button>
@@ -1243,6 +1242,7 @@
                     class="btn btn-warning text-light rounded w-75 mb-3"
                     data-target="#messageDeleteAcceptedModal"
                     data-toggle="modal"
+                    data-dismiss="modal"
                   >
                     Evet
                   </button>
@@ -1287,7 +1287,10 @@
               </h6>
             </div>
             <div class="col-12">
-              <button class="btn btn-warning text-light rounded w-75 mb-3">
+              <button
+                class="btn btn-warning text-light rounded w-75 mb-3"
+                data-dismiss="modal"
+              >
                 Tamam
               </button>
             </div>
